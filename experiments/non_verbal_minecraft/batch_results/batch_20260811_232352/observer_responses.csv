@@ -1,0 +1,9 @@
+run_id,agent,recognition_success,response_category,orients_to_maya,orients_to_alex,repairs_or_restores_build,blocks_or_interrupts_alex,returns_or_protects_items,uses_signal_lamp_or_process_signal,avoids_or_withdraws,aligns_with_alex,action
+20260811_232352_001,Jordan,False,other,False,False,False,False,False,False,False,False,Jordan 
+20260811_232352_001,Priya,False,other,False,False,False,False,False,False,False,False,Priya 
+20260811_232352_001,Sam,False,other,False,False,False,False,False,False,False,False,Sam 
+20260811_232352_001,Chen,False,other,False,False,False,False,False,False,False,False,Chen 
+20260811_232352_002,Jordan,False,other,False,False,False,False,False,False,False,False,Jordan 
+20260811_232352_002,Priya,False,other,False,False,False,False,False,False,False,False,Priya 
+20260811_232352_002,Sam,False,other,False,False,False,False,False,False,False,False,Sam 
+20260811_232352_002,Chen,False,other,False,False,False,False,False,False,False,False,Chen 

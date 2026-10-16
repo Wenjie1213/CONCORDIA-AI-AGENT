@@ -1,0 +1,7 @@
+run_id,agent,recognition_success,response_category,orients_to_target,orients_to_aggressor,repairs_or_restores_build,blocks_or_interrupts_aggressor,returns_or_protects_items,uses_signal_lamp_or_process_signal,avoids_or_withdraws,aligns_with_aggressor,action
+20260812_000526_001,Casey,False,other,True,False,False,False,False,False,False,False,Casey 
+20260812_000526_001,Taylor,False,other,False,False,False,False,False,False,False,False,Taylor 
+20260812_000526_001,Jordan,False,other,False,False,False,False,False,False,False,False,Jordan 
+20260812_000526_002,Casey,False,other,True,False,False,False,False,False,False,False,Casey 
+20260812_000526_002,Taylor,False,other,False,False,False,False,False,False,False,False,Taylor 
+20260812_000526_002,Jordan,False,other,False,False,False,False,False,False,False,False,Jordan 

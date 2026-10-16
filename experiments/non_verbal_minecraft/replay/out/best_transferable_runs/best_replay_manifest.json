@@ -1,0 +1,172 @@
+{
+  "runs": [
+    {
+      "scenario_id": "mc_aggressive_gesture_v1",
+      "run_id": "20260813_154821_gpt-5_realembed_no-relmem_008",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_aggressive_gesture_v1\\batch_aggressive_gesture_gpt-5_realembed_no-relmem_20260813_154821\\runs\\20260813_154821_gpt-5_realembed_no-relmem_008.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_aggressive_gesture_v1_best_replay.json",
+      "scientific_transferability_score": "0.9888",
+      "mean_action_unit_coverage": "1.0",
+      "mean_sequence_fidelity": "0.9167",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 36
+    },
+    {
+      "scenario_id": "mc_chest_access_denial_v1",
+      "run_id": "20260813_155950_gpt-5_realembed_no-relmem_012",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_chest_access_denial_v1\\batch_chest_access_denial_gpt-5_realembed_no-relmem_20260813_155950\\runs\\20260813_155950_gpt-5_realembed_no-relmem_012.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_chest_access_denial_v1_best_replay.json",
+      "scientific_transferability_score": "0.9691",
+      "mean_action_unit_coverage": "0.9375",
+      "mean_sequence_fidelity": "0.9167",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 31
+    },
+    {
+      "scenario_id": "mc_coordinated_exclusion_v1",
+      "run_id": "20260813_161153_gpt-5_realembed_no-relmem_003",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_coordinated_exclusion_v1\\batch_coordinated_exclusion_gpt-5_realembed_no-relmem_20260813_161153\\runs\\20260813_161153_gpt-5_realembed_no-relmem_003.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_coordinated_exclusion_v1_best_replay.json",
+      "scientific_transferability_score": "1.0",
+      "mean_action_unit_coverage": "1.0",
+      "mean_sequence_fidelity": "1.0",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 33
+    },
+    {
+      "scenario_id": "mc_following_crowding_v1",
+      "run_id": "20260813_162353_gpt-5_realembed_no-relmem_015",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_following_crowding_v1\\batch_following_crowding_gpt-5_realembed_no-relmem_20260813_162353\\runs\\20260813_162353_gpt-5_realembed_no-relmem_015.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_following_crowding_v1_best_replay.json",
+      "scientific_transferability_score": "0.9674",
+      "mean_action_unit_coverage": "0.95",
+      "mean_sequence_fidelity": "0.875",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 40
+    },
+    {
+      "scenario_id": "mc_personal_build_destruction_v1",
+      "run_id": "20260813_163440_gpt-5_realembed_no-relmem_005",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_personal_build_destruction_v1\\batch_personal_build_destruction_gpt-5_realembed_no-relmem_20260813_163440\\runs\\20260813_163440_gpt-5_realembed_no-relmem_005.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_personal_build_destruction_v1_best_replay.json",
+      "scientific_transferability_score": "0.9437",
+      "mean_action_unit_coverage": "1.0",
+      "mean_sequence_fidelity": "0.5833",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 32
+    },
+    {
+      "scenario_id": "mc_physical_intimidation_v1",
+      "run_id": "20260813_164611_gpt-5_realembed_no-relmem_001",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_physical_intimidation_v1\\batch_physical_intimidation_gpt-5_realembed_no-relmem_20260813_164611\\runs\\20260813_164611_gpt-5_realembed_no-relmem_001.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_physical_intimidation_v1_best_replay.json",
+      "scientific_transferability_score": "0.9674",
+      "mean_action_unit_coverage": "0.95",
+      "mean_sequence_fidelity": "0.875",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 47
+    },
+    {
+      "scenario_id": "mc_poster_covering_v1",
+      "run_id": "20260813_165731_gpt-5_realembed_no-relmem_001",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_poster_covering_v1\\batch_poster_covering_gpt-5_realembed_no-relmem_20260813_165731\\runs\\20260813_165731_gpt-5_realembed_no-relmem_001.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_poster_covering_v1_best_replay.json",
+      "scientific_transferability_score": "0.952",
+      "mean_action_unit_coverage": "0.9226",
+      "mean_sequence_fidelity": "0.825",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 40
+    },
+    {
+      "scenario_id": "mc_property_directed_aggression_v1",
+      "run_id": "20260813_170847_gpt-5_realembed_no-relmem_014",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_property_directed_aggression_v1\\batch_property_directed_aggression_gpt-5_realembed_no-relmem_20260813_170847\\runs\\20260813_170847_gpt-5_realembed_no-relmem_014.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_property_directed_aggression_v1_best_replay.json",
+      "scientific_transferability_score": "1.0",
+      "mean_action_unit_coverage": "1.0",
+      "mean_sequence_fidelity": "1.0",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 33
+    },
+    {
+      "scenario_id": "mc_repeated_escalation_v1",
+      "run_id": "20260813_171920_gpt-5_realembed_no-relmem_002",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_repeated_escalation_v1\\batch_repeated_escalation_gpt-5_realembed_no-relmem_20260813_171920\\runs\\20260813_171920_gpt-5_realembed_no-relmem_002.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_repeated_escalation_v1_best_replay.json",
+      "scientific_transferability_score": "0.9803",
+      "mean_action_unit_coverage": "0.9375",
+      "mean_sequence_fidelity": "1.0",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 38
+    },
+    {
+      "scenario_id": "mc_shared_build_visible_object_disruption_v1",
+      "run_id": "20260813_172954_gpt-5_realembed_no-relmem_016",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_shared_build_visible_object_disruption_v1\\batch_shared_build_area_gpt-5_realembed_no-relmem_20260813_172954\\runs\\20260813_172954_gpt-5_realembed_no-relmem_016.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_shared_build_visible_object_disruption_v1_best_replay.json",
+      "scientific_transferability_score": "0.9809",
+      "mean_action_unit_coverage": "1.0",
+      "mean_sequence_fidelity": "0.8583",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 36
+    },
+    {
+      "scenario_id": "mc_signal_based_mocking_v1",
+      "run_id": "20260813_174102_gpt-5_realembed_no-relmem_010",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_signal_based_mocking_v1\\batch_signal_based_mocking_gpt-5_realembed_no-relmem_20260813_174102\\runs\\20260813_174102_gpt-5_realembed_no-relmem_010.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_signal_based_mocking_v1_best_replay.json",
+      "scientific_transferability_score": "0.9629",
+      "mean_action_unit_coverage": "0.95",
+      "mean_sequence_fidelity": "0.8417",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 43
+    },
+    {
+      "scenario_id": "mc_silent_hostility_v1",
+      "run_id": "20260813_175234_gpt-5_realembed_no-relmem_009",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_silent_hostility_v1\\batch_silent_hostility_gpt-5_realembed_no-relmem_20260813_175234\\runs\\20260813_175234_gpt-5_realembed_no-relmem_009.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_silent_hostility_v1_best_replay.json",
+      "scientific_transferability_score": "1.0",
+      "mean_action_unit_coverage": "1.0",
+      "mean_sequence_fidelity": "1.0",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 24
+    },
+    {
+      "scenario_id": "mc_social_exclusion_v1",
+      "run_id": "20260813_180629_gpt-5_realembed_no-relmem_020",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_social_exclusion_v1\\batch_social_exclusion_gpt-5_realembed_no-relmem_20260813_180629\\runs\\20260813_180629_gpt-5_realembed_no-relmem_020.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_social_exclusion_v1_best_replay.json",
+      "scientific_transferability_score": "0.9831",
+      "mean_action_unit_coverage": "1.0",
+      "mean_sequence_fidelity": "0.875",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 42
+    },
+    {
+      "scenario_id": "mc_spawn_trapping_v1",
+      "run_id": "20260813_181734_gpt-5_realembed_no-relmem_014",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_spawn_trapping_v1\\batch_spawn_trapping_gpt-5_realembed_no-relmem_20260813_181734\\runs\\20260813_181734_gpt-5_realembed_no-relmem_014.json",
+      "replay_path": "experiments\\non_verbal_minecraft\\replay\\out\\best_transferable_runs\\mc_spawn_trapping_v1_best_replay.json",
+      "scientific_transferability_score": "0.9625",
+      "mean_action_unit_coverage": "0.9167",
+      "mean_sequence_fidelity": "0.9167",
+      "mean_spatial_grounding_rate": "1.0",
+      "should_migrate": "True",
+      "timeline_commands": 33
+    }
+  ]
+}

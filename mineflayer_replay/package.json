@@ -1,0 +1,19 @@
+﻿{
+    "name":  "non-verbal-minecraft-replay",
+    "version":  "0.1.0",
+    "private":  true,
+    "description":  "Replay Concordia non-verbal abuse traces with mineflayer and prismarine-viewer.",
+    "main":  "replay_runner.js",
+    "scripts":  {
+                    "replay":  "node replay_runner.js",
+                    "scenario":  "node scenario_runner.js",
+                    "best-run":  "node best_run_runner.js"
+                },
+    "dependencies":  {
+                         "mineflayer":  "^4.32.0",
+                         "mineflayer-pathfinder":  "^2.4.5",
+                         "prismarine-viewer":  "^1.33.0",
+                         "vec3":  "^0.1.10",
+                         "canvas":  "^3.2.0"
+                     }
+}

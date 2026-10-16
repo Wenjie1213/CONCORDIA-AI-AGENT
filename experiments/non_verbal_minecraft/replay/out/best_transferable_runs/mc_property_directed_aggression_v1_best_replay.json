@@ -1,0 +1,627 @@
+{
+  "schema": "non_verbal_minecraft_replay_v2",
+  "source_json": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_property_directed_aggression_v1\\batch_property_directed_aggression_gpt-5_realembed_no-relmem_20260813_170847\\runs\\20260813_170847_gpt-5_realembed_no-relmem_014.json",
+  "scenario_id": "mc_property_directed_aggression_v1",
+  "scenario": "Minecraft Property-directed Aggression",
+  "run_id": "20260813_170847_gpt-5_realembed_no-relmem_014",
+  "agents": {
+    "Morgan": {
+      "role": "scripted_actor",
+      "spawn": {
+        "x": 8,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Riley": {
+      "role": "target",
+      "spawn": {
+        "x": -3,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 3,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Casey": {
+      "role": "observer",
+      "spawn": {
+        "x": -7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Taylor": {
+      "role": "observer",
+      "spawn": {
+        "x": 0,
+        "y": 64,
+        "z": -6
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Jordan": {
+      "role": "observer",
+      "spawn": {
+        "x": 7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    }
+  },
+  "world": {
+    "minecraft_version": "1.20.1",
+    "world_type": "flat",
+    "origin": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "bounds": {
+      "min": {
+        "x": -22,
+        "y": 63,
+        "z": -18
+      },
+      "max": {
+        "x": 22,
+        "y": 72,
+        "z": 18
+      }
+    },
+    "viewer": {
+      "agent": "Casey",
+      "port": 3000,
+      "firstPerson": false,
+      "viewDistance": 7
+    }
+  },
+  "markers": {
+    "group_center": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "riley_work_area": {
+      "x": -4,
+      "y": 64,
+      "z": 2
+    },
+    "riley_safe_area": {
+      "x": -8,
+      "y": 64,
+      "z": 4
+    },
+    "riley_spawn": {
+      "x": -3,
+      "y": 64,
+      "z": 1
+    },
+    "riley_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "morgan_work_area": {
+      "x": 5,
+      "y": 64,
+      "z": 2
+    },
+    "shared_chest": {
+      "x": 0,
+      "y": 64,
+      "z": 4
+    },
+    "chest_front": {
+      "x": 0,
+      "y": 64,
+      "z": 3
+    },
+    "poster_wall": {
+      "x": -5,
+      "y": 65,
+      "z": 5
+    },
+    "poster_cover": {
+      "x": -5,
+      "y": 65,
+      "z": 4
+    },
+    "barrier_left": {
+      "x": -2,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_mid": {
+      "x": -1,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_right": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "morgan_near_riley": {
+      "x": -2,
+      "y": 64,
+      "z": 2
+    },
+    "morgan_blocking_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "observer_intercept": {
+      "x": -1,
+      "y": 64,
+      "z": 2
+    },
+    "observer_support": {
+      "x": -5,
+      "y": 64,
+      "z": 2
+    },
+    "observer_report": {
+      "x": 3,
+      "y": 64,
+      "z": -6
+    },
+    "observer_withdraw": {
+      "x": 9,
+      "y": 64,
+      "z": -8
+    },
+    "mocking_signal_spot": {
+      "x": 1,
+      "y": 64,
+      "z": 2
+    },
+    "damaged_block_a": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_b": {
+      "x": -3,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_c": {
+      "x": -4,
+      "y": 65,
+      "z": 3
+    },
+    "replacement_block": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "spawn_trap_a": {
+      "x": -4,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_b": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_c": {
+      "x": -3,
+      "y": 64,
+      "z": 0
+    },
+    "spawn_trap_d": {
+      "x": -3,
+      "y": 64,
+      "z": 2
+    }
+  },
+  "initial_blocks": [
+    {
+      "marker": "shared_chest",
+      "block": "chest"
+    },
+    {
+      "marker": "poster_wall",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_a",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_b",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_c",
+      "block": "lantern"
+    },
+    {
+      "marker": "morgan_work_area",
+      "block": "stone"
+    }
+  ],
+  "stimulus": {
+    "setup": "Scenario: The players are in a superflat Minecraft workshop area. Chat is disabled. Each player has a small workshop stall with a door, item frame, and chest for task materials.\nMap layout: {'world': 'superflat', 'workshop_area': 'x=-8..8, z=-8..8', 'riley_workshop': 'x=-5..-1, z=0..4', 'morgan_workshop': 'x=3..7, z=0..4', 'shared_chest': 'x=0, y=64, z=-4', 'signal_lamp': 'x=0, y=64, z=8', 'observer_line': 'x=-6,0,6, z=-2'}",
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan places one crafting table in Morgan's workshop and turns toward Riley's workshop.",
+      "Riley": "Riley places an oak door on Riley's workshop, puts an iron pickaxe in an item frame, opens Riley's chest to check tools, and closes it.",
+      "Casey": "Casey places two stone slabs between the workshops.",
+      "Taylor": "Taylor sorts spare tools in the shared chest.",
+      "Jordan": "Jordan places a marker block beside the signal lamp."
+    },
+    "target_action": "Riley places an oak door on Riley's workshop, puts an iron pickaxe in an item frame, opens Riley's chest to check tools, and closes it.",
+    "scripted_visible_incident": "Morgan walks into Riley's workshop area. Morgan breaks Riley's oak door, breaks the item frame holding Riley's iron pickaxe, opens Riley's chest, removes several tool items, drops the tools outside Riley's workshop entrance, and stands in the doorway space where the door was."
+  },
+  "source_actions": {
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan places one crafting table in Morgan's workshop and turns toward Riley's workshop.",
+      "Riley": "Riley places an oak door on Riley's workshop, puts an iron pickaxe in an item frame, opens Riley's chest to check tools, and closes it.",
+      "Casey": "Casey places two stone slabs between the workshops.",
+      "Taylor": "Taylor sorts spare tools in the shared chest.",
+      "Jordan": "Jordan places a marker block beside the signal lamp."
+    },
+    "scripted_visible_incident": "Morgan walks into Riley's workshop area. Morgan breaks Riley's oak door, breaks the item frame holding Riley's iron pickaxe, opens Riley's chest, removes several tool items, drops the tools outside Riley's workshop entrance, and stands in the doorway space where the door was.",
+    "observer_actions": {
+      "Casey": "Casey moves into Riley’s doorway to body-block Morgan, picks up the dropped tools, opens Riley’s chest, returns the tools, places a new oak door in the doorway, and places a stone slab at the threshold.",
+      "Taylor": "Taylor moves to the observer line, picks up the dropped tools, and returns them to the shared chest.",
+      "Jordan": "Jordan moves to the dropped tools, picks them up, returns them into Riley’s chest, reinstalls an oak door on Riley’s workshop, steps into the doorway to body-block Morgan out without hitting, rehangs the iron pickaxe in the item frame, then toggles the signal lamp once."
+    },
+    "target_reaction": "Riley takes two small steps backward from the doorway, turns slightly to face the side wall, then sidesteps along the wall toward the workshop’s back corner, keeping a wide arc around Morgan and edging toward the observer line."
+  },
+  "migration_report": {
+    "summary": {
+      "agents_mapped": 4,
+      "parseability_rate": 1.0,
+      "mean_primitive_coverage": 1.0,
+      "total_primitives": 13,
+      "unsupported_intent_count": 0
+    },
+    "per_agent": [
+      {
+        "agent": "Riley",
+        "source_action": "Riley takes two small steps backward from the doorway, turns slightly to face the side wall, then sidesteps along the wall toward the workshop’s back corner, keeping a wide arc around Morgan and edging toward the observer line.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 2,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Casey",
+        "source_action": "Casey moves into Riley’s doorway to body-block Morgan, picks up the dropped tools, opens Riley’s chest, returns the tools, places a new oak door in the doorway, and places a stone slab at the threshold.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "direct_intervention",
+          "face_aggressor",
+          "visible_stop_signal"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 4,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Taylor",
+        "source_action": "Taylor moves to the observer line, picks up the dropped tools, and returns them to the shared chest.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 2,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Jordan",
+        "source_action": "Jordan moves to the dropped tools, picks them up, returns them into Riley’s chest, reinstalls an oak door on Riley’s workshop, steps into the doorway to body-block Morgan out without hitting, rehangs the iron pickaxe in the item frame, then toggles the signal lamp once.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "direct_intervention",
+          "face_aggressor",
+          "visible_stop_signal",
+          "nonverbal_signal"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 5,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "t": 20,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_work_area",
+      "range": 2
+    },
+    {
+      "t": 24,
+      "agent": "Morgan",
+      "cmd": "look_at_block",
+      "target": "morgan_work_area"
+    },
+    {
+      "t": 28,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Morgan places one crafting table in Morgan's workshop and turns toward Riley's workshop."
+    },
+    {
+      "t": 30,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "riley_work_area",
+      "range": 2
+    },
+    {
+      "t": 34,
+      "agent": "Riley",
+      "cmd": "look_at_block",
+      "target": "riley_work_area"
+    },
+    {
+      "t": 38,
+      "agent": "Riley",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Riley places an oak door on Riley's workshop, puts an iron pickaxe in an item frame, opens Riley's chest to check tools, and closes it."
+    },
+    {
+      "t": 40,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "shared_chest",
+      "range": 2
+    },
+    {
+      "t": 44,
+      "agent": "Casey",
+      "cmd": "look_at_block",
+      "target": "shared_chest"
+    },
+    {
+      "t": 48,
+      "agent": "Casey",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Casey places two stone slabs between the workshops."
+    },
+    {
+      "t": 50,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "group_center",
+      "range": 2
+    },
+    {
+      "t": 54,
+      "agent": "Taylor",
+      "cmd": "look_at_block",
+      "target": "group_center"
+    },
+    {
+      "t": 58,
+      "agent": "Taylor",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Taylor sorts spare tools in the shared chest."
+    },
+    {
+      "t": 60,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "poster_wall",
+      "range": 2
+    },
+    {
+      "t": 64,
+      "agent": "Jordan",
+      "cmd": "look_at_block",
+      "target": "poster_wall"
+    },
+    {
+      "t": 68,
+      "agent": "Jordan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Jordan places a marker block beside the signal lamp."
+    },
+    {
+      "t": 140,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "damaged_block_a",
+      "range": 1
+    },
+    {
+      "t": 148,
+      "agent": "Morgan",
+      "cmd": "look_at_agent",
+      "target": "Riley"
+    },
+    {
+      "t": 154,
+      "agent": "Morgan",
+      "cmd": "emote_signal",
+      "target_agent": "Riley",
+      "repeat": 6,
+      "jump": true
+    },
+    {
+      "t": 168,
+      "agent": "Morgan",
+      "cmd": "dig_block",
+      "target": "damaged_block_a"
+    },
+    {
+      "t": 180,
+      "agent": "Morgan",
+      "cmd": "dig_block",
+      "target": "damaged_block_b"
+    },
+    {
+      "t": 390,
+      "agent": "Riley",
+      "cmd": "sprint_goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Riley takes two small steps backward from the doorway, turns slightly to face the side wall, then sidesteps along the wall toward the workshop’s back corner, keeping a wide arc aro"
+    },
+    {
+      "t": 396,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Riley takes two small steps backward from the doorway, turns slightly to face the side wall, then sidesteps along the wall toward the workshop’s back corner, keeping a wide arc aro"
+    },
+    {
+      "t": 470,
+      "agent": "Casey",
+      "cmd": "sprint_goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Casey moves into Riley’s doorway to body-block Morgan, picks up the dropped tools, opens Riley’s chest, returns the tools, places a new oak door in the doorway, and places a stone "
+    },
+    {
+      "t": 480,
+      "agent": "Casey",
+      "cmd": "sprint_goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Casey moves into Riley’s doorway to body-block Morgan, picks up the dropped tools, opens Riley’s chest, returns the tools, places a new oak door in the doorway, and places a stone "
+    },
+    {
+      "t": 486,
+      "agent": "Casey",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Casey moves into Riley’s doorway to body-block Morgan, picks up the dropped tools, opens Riley’s chest, returns the tools, places a new oak door in the doorway, and places a stone "
+    },
+    {
+      "t": 492,
+      "agent": "Casey",
+      "cmd": "emote_signal",
+      "target_agent": "Morgan",
+      "repeat": 5,
+      "jump": true,
+      "source_action_excerpt": "Casey moves into Riley’s doorway to body-block Morgan, picks up the dropped tools, opens Riley’s chest, returns the tools, places a new oak door in the doorway, and places a stone "
+    },
+    {
+      "t": 550,
+      "agent": "Taylor",
+      "cmd": "sprint_goto",
+      "target": "group_center",
+      "range": 1,
+      "source_action_excerpt": "Taylor moves to the observer line, picks up the dropped tools, and returns them to the shared chest."
+    },
+    {
+      "t": 556,
+      "agent": "Taylor",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Taylor moves to the observer line, picks up the dropped tools, and returns them to the shared chest."
+    },
+    {
+      "t": 630,
+      "agent": "Jordan",
+      "cmd": "sprint_goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Jordan moves to the dropped tools, picks them up, returns them into Riley’s chest, reinstalls an oak door on Riley’s workshop, steps into the doorway to body-block Morgan out witho"
+    },
+    {
+      "t": 640,
+      "agent": "Jordan",
+      "cmd": "sprint_goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Jordan moves to the dropped tools, picks them up, returns them into Riley’s chest, reinstalls an oak door on Riley’s workshop, steps into the doorway to body-block Morgan out witho"
+    },
+    {
+      "t": 646,
+      "agent": "Jordan",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Jordan moves to the dropped tools, picks them up, returns them into Riley’s chest, reinstalls an oak door on Riley’s workshop, steps into the doorway to body-block Morgan out witho"
+    },
+    {
+      "t": 652,
+      "agent": "Jordan",
+      "cmd": "emote_signal",
+      "target_agent": "Morgan",
+      "repeat": 5,
+      "jump": true,
+      "source_action_excerpt": "Jordan moves to the dropped tools, picks them up, returns them into Riley’s chest, reinstalls an oak door on Riley’s workshop, steps into the doorway to body-block Morgan out witho"
+    },
+    {
+      "t": 672,
+      "agent": "Jordan",
+      "cmd": "emote_signal",
+      "target_agent": "Morgan",
+      "repeat": 4,
+      "jump": true,
+      "source_action_excerpt": "Jordan moves to the dropped tools, picks them up, returns them into Riley’s chest, reinstalls an oak door on Riley’s workshop, steps into the doorway to body-block Morgan out witho"
+    }
+  ],
+  "selection_metadata": {
+    "selection_method": "best_strict_scientific_transferability_per_scenario",
+    "scientific_transferability_score": 1.0,
+    "mean_action_unit_coverage": 1.0,
+    "mean_sequence_fidelity": 1.0,
+    "mean_spatial_grounding_rate": 1.0,
+    "migration_recommended": true,
+    "decision_reasons": "",
+    "source_benchmark_row": {
+      "scenario_id": "mc_property_directed_aggression_v1",
+      "run_id": "20260813_170847_gpt-5_realembed_no-relmem_014",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_property_directed_aggression_v1\\batch_property_directed_aggression_gpt-5_realembed_no-relmem_20260813_170847\\runs\\20260813_170847_gpt-5_realembed_no-relmem_014.json",
+      "agents_evaluated": "4",
+      "parseability_rate": "1.0",
+      "mean_action_unit_coverage": "1.0",
+      "mean_spatial_grounding_rate": "1.0",
+      "mean_sequence_fidelity": "1.0",
+      "mean_visual_semantic_support": "1.0",
+      "mean_action_score": "1.0",
+      "schema_valid": "True",
+      "invalid_command_count": "0",
+      "unknown_target_count": "0",
+      "timeline_commands": "31",
+      "scientific_transferability_score": "1.0",
+      "should_migrate": "True",
+      "decision_reasons": ""
+    }
+  }
+}

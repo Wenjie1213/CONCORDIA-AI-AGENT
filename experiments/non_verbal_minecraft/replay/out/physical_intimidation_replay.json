@@ -1,0 +1,584 @@
+{
+  "schema": "non_verbal_minecraft_replay_v1",
+  "source_json": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_physical_intimidation_v1\\batch_physical_intimidation_gpt-5_realembed_no-relmem_20260813_164611\\runs\\20260813_164611_gpt-5_realembed_no-relmem_001.json",
+  "scenario_id": "mc_physical_intimidation_v1",
+  "scenario": "Minecraft Physical Intimidation",
+  "run_id": "20260813_164611_gpt-5_realembed_no-relmem_001",
+  "chosen_for_demo": "physical_intimidation has clear spatial intimidation, object damage, and visible bystander intervention.",
+  "agents": {
+    "Morgan": {
+      "role": "scripted_actor",
+      "spawn": {
+        "x": 8,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Riley": {
+      "role": "target",
+      "spawn": {
+        "x": -2,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 6,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Casey": {
+      "role": "observer",
+      "spawn": {
+        "x": -6,
+        "y": 64,
+        "z": -4
+      },
+      "look_at": {
+        "x": 1,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Taylor": {
+      "role": "observer",
+      "spawn": {
+        "x": 0,
+        "y": 64,
+        "z": -4
+      },
+      "look_at": {
+        "x": 1,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Jordan": {
+      "role": "observer",
+      "spawn": {
+        "x": 6,
+        "y": 64,
+        "z": -4
+      },
+      "look_at": {
+        "x": 1,
+        "y": 64,
+        "z": 1
+      }
+    }
+  },
+  "world": {
+    "minecraft_version": "1.20.1",
+    "world_type": "flat",
+    "origin": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "bounds": {
+      "min": {
+        "x": -18,
+        "y": 63,
+        "z": -14
+      },
+      "max": {
+        "x": 18,
+        "y": 72,
+        "z": 14
+      }
+    },
+    "viewer": {
+      "agent": "Casey",
+      "port": 3000,
+      "firstPerson": false,
+      "viewDistance": 6
+    }
+  },
+  "markers": {
+    "gate_center": {
+      "x": 0,
+      "y": 64,
+      "z": 1
+    },
+    "riley_gate_left": {
+      "x": -4,
+      "y": 64,
+      "z": 1
+    },
+    "riley_gate_right": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "riley_lantern": {
+      "x": -3,
+      "y": 65,
+      "z": 1
+    },
+    "morgan_support": {
+      "x": 5,
+      "y": 64,
+      "z": 1
+    },
+    "exit_path": {
+      "x": -1,
+      "y": 64,
+      "z": 1
+    },
+    "morgan_blocking_exit": {
+      "x": -1,
+      "y": 64,
+      "z": 1
+    },
+    "in_front_of_riley": {
+      "x": -2,
+      "y": 64,
+      "z": 2
+    },
+    "between_morgan_riley": {
+      "x": -2,
+      "y": 64,
+      "z": 0
+    },
+    "between_morgan_riley_alt": {
+      "x": -3,
+      "y": 64,
+      "z": 0
+    },
+    "casey_observer": {
+      "x": -6,
+      "y": 64,
+      "z": -4
+    },
+    "taylor_observer": {
+      "x": 0,
+      "y": 64,
+      "z": -4
+    },
+    "jordan_observer": {
+      "x": 6,
+      "y": 64,
+      "z": -4
+    },
+    "shared_chest": {
+      "x": 0,
+      "y": 64,
+      "z": -6
+    },
+    "signal_lamp": {
+      "x": 0,
+      "y": 64,
+      "z": 6
+    },
+    "safe_near_taylor": {
+      "x": -1,
+      "y": 64,
+      "z": -4
+    },
+    "barrier_1": {
+      "x": -2,
+      "y": 64,
+      "z": 2
+    },
+    "barrier_2": {
+      "x": -1,
+      "y": 64,
+      "z": 2
+    }
+  },
+  "initial_blocks": [
+    {
+      "pos": {
+        "x": -9,
+        "y": 63,
+        "z": -7
+      },
+      "to": {
+        "x": 9,
+        "y": 63,
+        "z": 7
+      },
+      "block": "grass_block"
+    },
+    {
+      "pos": {
+        "x": -8,
+        "y": 64,
+        "z": -2
+      },
+      "to": {
+        "x": 8,
+        "y": 64,
+        "z": -2
+      },
+      "block": "stone_bricks"
+    },
+    {
+      "pos": {
+        "x": -8,
+        "y": 64,
+        "z": 1
+      },
+      "to": {
+        "x": 8,
+        "y": 64,
+        "z": 1
+      },
+      "block": "stone_bricks"
+    },
+    {
+      "marker": "shared_chest",
+      "block": "chest"
+    },
+    {
+      "marker": "signal_lamp",
+      "block": "redstone_lamp"
+    },
+    {
+      "marker": "riley_gate_left",
+      "block": "oak_fence"
+    },
+    {
+      "marker": "riley_gate_right",
+      "block": "oak_fence"
+    },
+    {
+      "marker": "riley_lantern",
+      "block": "lantern"
+    },
+    {
+      "marker": "morgan_support",
+      "block": "stone_bricks"
+    }
+  ],
+  "stimulus": {
+    "setup": "Scenario: The players are in a superflat Minecraft village gate worksite. Chat is disabled. The group task is to build a wooden gate with fence posts, lanterns, and stone supports.\nMap layout: {'world': 'superflat', 'gate_area': 'x=-8..8, z=-5..5', 'riley_gate_side': 'x=-4..0, z=0..3', 'morgan_gate_side': 'x=4..8, z=0..3', 'shared_chest': 'x=0, y=64, z=-4', 'signal_lamp': 'x=0, y=64, z=5', 'observer_line': 'x=-6,0,6, z=-2'}",
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan places one stone support and turns toward the gate.",
+      "Riley": "Riley places two oak fence posts on Riley's gate side, hangs one lantern between them, and steps backward toward the open exit path.",
+      "Casey": "Casey places two stone slabs along the approach path and keeps the gate opening visible.",
+      "Taylor": "Taylor opens the shared chest, checks the lantern stack, closes it, and stands near the observer line.",
+      "Jordan": "Jordan places a marker block beside the signal lamp and faces the gate worksite."
+    },
+    "target_action": "Riley places two oak fence posts on Riley's gate side, hangs one lantern between them, and steps backward toward the open exit path.",
+    "scripted_visible_incident": "Morgan sprints toward Riley. Riley steps backward toward the open exit path. Morgan moves into the exit path and stops one block in front of Riley. Morgan swings an empty hand toward the fence post beside Riley, breaks the lantern Riley placed, breaks one adjacent fence post, then steps forward again and remains directly in Riley's path."
+  },
+  "source_actions": {
+    "scripted_visible_incident": "Morgan sprints toward Riley. Riley steps backward toward the open exit path. Morgan moves into the exit path and stops one block in front of Riley. Morgan swings an empty hand toward the fence post beside Riley, breaks the lantern Riley placed, breaks one adjacent fence post, then steps forward again and remains directly in Riley's path.",
+    "observer_actions": {
+      "Casey": "Casey steps into the gap between Riley and Morgan, shuffles half a block to align beside Morgan, places an oak fence post to re-establish the corridor, hangs a lantern on it, and holds position to body-block the corridor edge while facing the gate.",
+      "Taylor": "Taylor moves from the observer line to the broken lantern and fence post, crouches, looks at the gap, and repairs the fence post, then steps back to the observer line.",
+      "Jordan": "Jordan moves between Morgan and Riley, places a line of temporary barrier blocks to reopen the exit path, picks up the dropped lantern and fence post, returns them to Riley’s side, and repairs the broken fence and rehangs the lantern."
+    },
+    "target_reaction": "Riley steps back two blocks, turns slightly to the left to avoid Morgan and the broken area, walks in a gentle arc toward the shared chest, stops near Taylor by the observer line with empty hands, and lowers gaze away from Morgan."
+  },
+  "timeline": [
+    {
+      "t": 20,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "riley_gate_left"
+    },
+    {
+      "t": 20,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_support"
+    },
+    {
+      "t": 30,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "casey_observer"
+    },
+    {
+      "t": 35,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "shared_chest"
+    },
+    {
+      "t": 35,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "signal_lamp"
+    },
+    {
+      "t": 40,
+      "agent": "Riley",
+      "cmd": "place_block",
+      "target": "riley_gate_left",
+      "block": "oak_fence"
+    },
+    {
+      "t": 50,
+      "agent": "Morgan",
+      "cmd": "place_block",
+      "target": "morgan_support",
+      "block": "stone_bricks"
+    },
+    {
+      "t": 55,
+      "agent": "Casey",
+      "cmd": "place_block",
+      "target": {
+        "x": -5,
+        "y": 64,
+        "z": -2
+      },
+      "block": "stone_slab"
+    },
+    {
+      "t": 60,
+      "agent": "Riley",
+      "cmd": "place_block",
+      "target": "riley_gate_right",
+      "block": "oak_fence"
+    },
+    {
+      "t": 65,
+      "agent": "Taylor",
+      "cmd": "swing_arm",
+      "repeat": 1
+    },
+    {
+      "t": 65,
+      "agent": "Jordan",
+      "cmd": "place_block",
+      "target": {
+        "x": 1,
+        "y": 64,
+        "z": 6
+      },
+      "block": "blue_wool"
+    },
+    {
+      "t": 80,
+      "agent": "Riley",
+      "cmd": "place_block",
+      "target": "riley_lantern",
+      "block": "lantern"
+    },
+    {
+      "t": 90,
+      "agent": "Morgan",
+      "cmd": "look_at_agent",
+      "target": "Riley"
+    },
+    {
+      "t": 95,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "taylor_observer"
+    },
+    {
+      "t": 95,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "jordan_observer"
+    },
+    {
+      "t": 100,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "exit_path"
+    },
+    {
+      "t": 140,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "in_front_of_riley",
+      "speed": "fast"
+    },
+    {
+      "t": 165,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": {
+        "x": -3,
+        "y": 64,
+        "z": 1
+      }
+    },
+    {
+      "t": 185,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_blocking_exit"
+    },
+    {
+      "t": 210,
+      "agent": "Morgan",
+      "cmd": "look_at_agent",
+      "target": "Riley"
+    },
+    {
+      "t": 220,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 3
+    },
+    {
+      "t": 255,
+      "agent": "Morgan",
+      "cmd": "dig_block",
+      "target": "riley_lantern"
+    },
+    {
+      "t": 285,
+      "agent": "Morgan",
+      "cmd": "dig_block",
+      "target": "riley_gate_right"
+    },
+    {
+      "t": 315,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "in_front_of_riley"
+    },
+    {
+      "t": 340,
+      "agent": "Morgan",
+      "cmd": "look_at_agent",
+      "target": "Riley"
+    },
+    {
+      "t": 360,
+      "agent": "Morgan",
+      "cmd": "stand",
+      "ticks": 50
+    },
+    {
+      "t": 390,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "between_morgan_riley"
+    },
+    {
+      "t": 400,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "safe_near_taylor"
+    },
+    {
+      "t": 410,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "riley_gate_right"
+    },
+    {
+      "t": 420,
+      "agent": "Casey",
+      "cmd": "place_block",
+      "target": "riley_gate_right",
+      "block": "oak_fence"
+    },
+    {
+      "t": 430,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "between_morgan_riley_alt"
+    },
+    {
+      "t": 435,
+      "agent": "Taylor",
+      "cmd": "sneak",
+      "state": true
+    },
+    {
+      "t": 435,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Taylor"
+    },
+    {
+      "t": 445,
+      "agent": "Casey",
+      "cmd": "place_block",
+      "target": "riley_lantern",
+      "block": "lantern"
+    },
+    {
+      "t": 455,
+      "agent": "Taylor",
+      "cmd": "place_block",
+      "target": "riley_gate_right",
+      "block": "oak_fence"
+    },
+    {
+      "t": 460,
+      "agent": "Jordan",
+      "cmd": "place_block",
+      "target": "barrier_1",
+      "block": "cobblestone"
+    },
+    {
+      "t": 465,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Morgan"
+    },
+    {
+      "t": 470,
+      "agent": "Casey",
+      "cmd": "look_at_agent",
+      "target": "Morgan"
+    },
+    {
+      "t": 480,
+      "agent": "Taylor",
+      "cmd": "sneak",
+      "state": false
+    },
+    {
+      "t": 485,
+      "agent": "Casey",
+      "cmd": "stand",
+      "ticks": 45
+    },
+    {
+      "t": 485,
+      "agent": "Jordan",
+      "cmd": "place_block",
+      "target": "barrier_2",
+      "block": "cobblestone"
+    },
+    {
+      "t": 485,
+      "agent": "Riley",
+      "cmd": "stand",
+      "ticks": 40
+    },
+    {
+      "t": 500,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "taylor_observer"
+    },
+    {
+      "t": 515,
+      "agent": "Jordan",
+      "cmd": "place_block",
+      "target": "riley_gate_right",
+      "block": "oak_fence"
+    },
+    {
+      "t": 540,
+      "agent": "Jordan",
+      "cmd": "place_block",
+      "target": "riley_lantern",
+      "block": "lantern"
+    },
+    {
+      "t": 565,
+      "agent": "Jordan",
+      "cmd": "look_at_agent",
+      "target": "Riley"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+scenario_id,runs,mean_scientific_transferability_score,mean_action_unit_coverage,mean_spatial_grounding_rate,mean_sequence_fidelity,mean_visual_semantic_support,schema_valid_rate,migration_recommended_rate,recommended_runs
+mc_aggressive_gesture_v1,20,0.9452,0.8719,1.0,0.8929,1.0,1.0,0.9,18
+mc_chest_access_denial_v1,20,0.9452,0.8731,1.0,0.89,1.0,1.0,0.95,19
+mc_coordinated_exclusion_v1,20,0.9543,0.8835,1.0,0.9329,1.0,1.0,0.85,17
+mc_following_crowding_v1,20,0.9236,0.8443,1.0,0.7975,1.0,1.0,0.75,15
+mc_personal_build_destruction_v1,20,0.9049,0.8734,1.0,0.5912,1.0,1.0,0.65,13
+mc_physical_intimidation_v1,20,0.919,0.8175,1.0,0.8654,1.0,1.0,0.75,15
+mc_poster_covering_v1,20,0.9107,0.8404,1.0,0.7108,1.0,1.0,0.75,15
+mc_property_directed_aggression_v1,20,0.9394,0.865,1.0,0.8992,1.0,1.0,0.75,15
+mc_repeated_escalation_v1,20,0.9071,0.7944,1.0,0.7917,1.0,1.0,0.6,12
+mc_shared_build_visible_object_disruption_v1,20,0.9238,0.8593,1.0,0.7642,1.0,1.0,0.8,16
+mc_signal_based_mocking_v1,20,0.9048,0.7737,1.0,0.8225,1.0,1.0,0.55,11
+mc_silent_hostility_v1,20,0.9353,0.809,1.0,0.9667,1.0,1.0,0.75,15
+mc_social_exclusion_v1,20,0.9225,0.8092,1.0,0.8713,1.0,1.0,0.8,16
+mc_spawn_trapping_v1,20,0.9091,0.7879,1.0,0.8217,1.0,1.0,0.65,13

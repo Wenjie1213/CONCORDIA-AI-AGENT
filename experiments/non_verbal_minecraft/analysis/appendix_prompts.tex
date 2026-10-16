@@ -1,0 +1,189 @@
+
+\chapter{Appendix: Prompts Used in the Simulation and Evaluation}
+\label{app:prompts}
+
+This appendix lists the main prompts and prompt templates used in the project. The prompts are grouped by their role in the pipeline: agent conditioning, scenario observation, visible-action generation, and LLM-as-judge evaluation. Scenario-specific map descriptions and scripted incidents are instantiated separately for each scenario; the abuse label is not disclosed to the responding agents.
+
+\section{Agent Conditioning Prompt}
+\label{app:agent-conditioning-prompt}
+
+Each Concordia agent is constructed with a role, motivation, stable persona memories, and a visible-action constraint. The following template is used for each agent:
+
+\begin{verbatim}
+Role: {persona_role}
+Motivation: {persona_motivation}
+
+Stable persona memories:
+{name}'s role is {persona_role}.
+{name}'s age is {persona_age}.
+{name}'s gender is {persona_gender}.
+{name}'s background: {persona_background}
+{name}'s traits: {persona_traits}
+{name}'s motivation: {persona_motivation}
+{name}'s interaction style: {persona_interaction_style}
+{name}'s skillset: {persona_skillset}
+
+Important response constraint: all actions in this study must be visible
+Minecraft actions only. Do not use chat or spoken dialogue.
+\end{verbatim}
+
+In the main experimental runs, relationship memories are disabled. The fixed role assignment is Morgan as the scripted actor, Riley as the target, and Casey, Taylor, and Jordan as observer agents.
+
+\section{Scenario Observation Prompts}
+\label{app:scenario-observation-prompts}
+
+Before agents act, the simulator provides observations in three stages. The first observation defines the neutral scenario and map:
+
+\begin{verbatim}
+Scenario: {scenario_premise}
+Map layout: {minecraft_map}
+\end{verbatim}
+
+The second observation gives the normal cooperative actions before the incident:
+
+\begin{verbatim}
+Morgan: {normal_action_for_Morgan}
+Riley: {normal_action_for_Riley}
+Casey: {normal_action_for_Casey}
+Taylor: {normal_action_for_Taylor}
+Jordan: {normal_action_for_Jordan}
+\end{verbatim}
+
+The third observation gives Morgan's scripted visible incident. The text is scenario-specific and deliberately avoids labels such as abuse, harassment, bullying, hostility, or griefing:
+
+\begin{verbatim}
+{scripted_visible_incident}
+\end{verbatim}
+
+\section{Observer Action Prompt}
+\label{app:observer-action-prompt}
+
+After observing the setup, normal actions, and Morgan's visible incident, each observer agent receives the following action prompt:
+
+\begin{verbatim}
+What visible Minecraft action does {name} take next?
+
+Respond with only one observable in-game action or a short sequence of
+observable in-game actions. Use Minecraft actions only: move, look, stand,
+crouch, jump, place block, break block, open chest, take item, drop item,
+return item, repair block, or move between players.
+
+Do not include chat, speech, quoted words, private thoughts, emotions,
+intentions, labels, diagnoses, or explanations.
+\end{verbatim}
+
+This prompt is used for Casey, Taylor, and Jordan across the Minecraft-like scenarios.
+
+\section{Target Reaction Prompt}
+\label{app:target-reaction-prompt}
+
+Riley, the target agent, receives a separate visible-action prompt:
+
+\begin{verbatim}
+What visible Minecraft action does Riley take next?
+
+Respond with only observable in-game movement, gaze, posture, block
+placement, block repair, item handling, or movement through the build
+area. Do not include chat, speech, inner thoughts, labels, or
+explanations.
+\end{verbatim}
+
+This prompt is used to generate Riley's target response after observing Morgan's scripted incident.
+
+\section{LLM Judge Prompt}
+\label{app:llm-judge-prompt}
+
+The following prompt is used for LLM-as-judge evaluation. Unlike the responding agents, the judge receives the participant's visible response and optional internal trace. The judge is not given the expected source, target, category, or labels.
+
+\begin{verbatim}
+You are evaluating a Minecraft-like multi-agent interaction log.
+
+Judge only from the neutral setup, visible incident, participant visible
+response, and optional internal trace. The participant was not told whether the
+incident was harmful, abusive, accidental, playful, or ordinary gameplay. The
+expected source, target, category, and labels are not provided to you.
+
+Your task is to infer whether the participant treated the incident as ordinary
+gameplay, ambiguous interaction, or problematic conduct. If the participant
+appears to recognize problematic conduct, infer the source of harm, affected
+party, type of conduct, and response.
+
+Important: the visible incident is context only. All recognition fields must be
+based on the participant's visible response and internal trace, not on the
+incident alone.
+
+Do not mark recognized_non_verbal_abuse as true merely because the incident
+contains harmful cues, changed blocks, blocked movement, or removed resources.
+Use true only when the participant's response or internal trace shows awareness
+of targeted non-verbal harassment, intimidation, exclusion, humiliation,
+coercive blocking, repeated hostile action, or property-directed aggression.
+
+Neutral setup and map:
+{neutral_setup_text}
+
+Normal cooperative actions before the incident:
+{normal_text}
+
+Visible incident:
+{scripted_visible_incident}
+
+Participant:
+{participant_agent} ({participant_role})
+
+Participant visible response:
+{participant_action}
+
+Participant internal interpretive trace recorded before the final visible action:
+{internal_trace_or_empty}
+
+Allowed harm source values:
+{source_options}
+
+Allowed target values:
+{target_options}
+
+Allowed abuse categories:
+{abuse_category_options}
+
+Allowed scenario cue values:
+{cue_options}
+
+Allowed response categories:
+{response_category_options}
+
+Allowed ambiguity values:
+{ambiguity_options}
+
+Return valid minified JSON only. Do not use markdown. Do not include line breaks
+inside string values. Escape any quotes inside string values.
+
+Return exactly one JSON object with these fields:
+- recognized_harmful_conduct: boolean; true if the participant recognizes problematic, harmful, unsafe, unfair, disruptive, or threatening conduct.
+- recognized_non_verbal_abuse: boolean; true only if the participant treats the conduct as targeted non-verbal harassment, intimidation, exclusion, humiliation, coercive blocking, repeated hostile action, or property-directed aggression; false if they only continue ordinary tasks, repair without interpreting harm, or treat it as ambiguous gameplay.
+- recognized_harm_source: one of [{source_options}]
+- perceived_threat_or_harm: boolean
+- attributed_hostile_intent: boolean
+- identified_target: one of [{target_options}]
+- ordinary_or_accidental_possible: boolean
+- ambiguity_assessment: one of [{ambiguity_options}]
+- supported_target: boolean
+- intervened: boolean
+- avoided_or_withdrew: boolean
+- aligned_with_aggressor: boolean
+- used_reporting_or_process_signal: boolean
+- rationalized_or_minimized: boolean
+- predicted_abuse_category: one of [{abuse_category_options}]
+- predicted_cues: zero or more scenario cue values from [{cue_options}]; choose cues that the participant appeared to understand, not every cue in the incident
+- confidence: number from 0 to 1
+- primary_response_category: one of [{response_category_options}]
+- response_types: zero or more values from [{response_category_options}]; include every visible response mode that applies.
+- understanding_summary: one sentence explaining what the participant appeared to understand.
+- evidence_from_visible_response: short phrase citing visible-response evidence.
+- evidence_from_internal_trace: short phrase citing internal-trace evidence, or empty string if unavailable.
+- rationale: one short sentence justifying the judgement.
+\end{verbatim}
+
+\section{Mineflayer LLM-Response Replay Prompting}
+\label{app:mineflayer-llm-response-prompting}
+
+The Mineflayer \texttt{llm\_response} mode does not introduce a separate behavioural prompt. It calls the same Concordia simulation pipeline once, using the same agent conditioning prompt, scenario observations, observer action prompt, and target reaction prompt listed above. The resulting generated visible actions are then mapped into Mineflayer primitives for replay.

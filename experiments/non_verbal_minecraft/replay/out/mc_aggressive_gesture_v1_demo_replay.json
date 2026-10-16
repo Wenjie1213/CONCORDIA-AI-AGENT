@@ -1,0 +1,601 @@
+{
+  "schema": "non_verbal_minecraft_replay_v2",
+  "source_json": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_aggressive_gesture_v1\\batch_aggressive_gesture_gpt-5_realembed_no-relmem_20260813_154821\\runs\\20260813_154821_gpt-5_realembed_no-relmem_001.json",
+  "scenario_id": "mc_aggressive_gesture_v1",
+  "scenario": "Minecraft Aggressive Gesture",
+  "run_id": "20260813_154821_gpt-5_realembed_no-relmem_001",
+  "agents": {
+    "Morgan": {
+      "role": "scripted_actor",
+      "spawn": {
+        "x": 8,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Riley": {
+      "role": "target",
+      "spawn": {
+        "x": -3,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 3,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Casey": {
+      "role": "observer",
+      "spawn": {
+        "x": -7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Taylor": {
+      "role": "observer",
+      "spawn": {
+        "x": 0,
+        "y": 64,
+        "z": -6
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Jordan": {
+      "role": "observer",
+      "spawn": {
+        "x": 7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    }
+  },
+  "world": {
+    "minecraft_version": "1.20.1",
+    "world_type": "flat",
+    "origin": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "bounds": {
+      "min": {
+        "x": -22,
+        "y": 63,
+        "z": -18
+      },
+      "max": {
+        "x": 22,
+        "y": 72,
+        "z": 18
+      }
+    },
+    "viewer": {
+      "agent": "Casey",
+      "port": 3000,
+      "firstPerson": false,
+      "viewDistance": 7
+    }
+  },
+  "markers": {
+    "group_center": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "riley_work_area": {
+      "x": -4,
+      "y": 64,
+      "z": 2
+    },
+    "riley_safe_area": {
+      "x": -8,
+      "y": 64,
+      "z": 4
+    },
+    "riley_spawn": {
+      "x": -3,
+      "y": 64,
+      "z": 1
+    },
+    "riley_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "morgan_work_area": {
+      "x": 5,
+      "y": 64,
+      "z": 2
+    },
+    "shared_chest": {
+      "x": 0,
+      "y": 64,
+      "z": 4
+    },
+    "chest_front": {
+      "x": 0,
+      "y": 64,
+      "z": 3
+    },
+    "poster_wall": {
+      "x": -5,
+      "y": 65,
+      "z": 5
+    },
+    "poster_cover": {
+      "x": -5,
+      "y": 65,
+      "z": 4
+    },
+    "barrier_left": {
+      "x": -2,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_mid": {
+      "x": -1,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_right": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "morgan_near_riley": {
+      "x": -2,
+      "y": 64,
+      "z": 2
+    },
+    "morgan_blocking_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "observer_intercept": {
+      "x": -1,
+      "y": 64,
+      "z": 2
+    },
+    "observer_support": {
+      "x": -5,
+      "y": 64,
+      "z": 2
+    },
+    "observer_report": {
+      "x": 3,
+      "y": 64,
+      "z": -6
+    },
+    "observer_withdraw": {
+      "x": 9,
+      "y": 64,
+      "z": -8
+    },
+    "mocking_signal_spot": {
+      "x": 1,
+      "y": 64,
+      "z": 2
+    },
+    "damaged_block_a": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_b": {
+      "x": -3,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_c": {
+      "x": -4,
+      "y": 65,
+      "z": 3
+    },
+    "replacement_block": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "spawn_trap_a": {
+      "x": -4,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_b": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_c": {
+      "x": -3,
+      "y": 64,
+      "z": 0
+    },
+    "spawn_trap_d": {
+      "x": -3,
+      "y": 64,
+      "z": 2
+    }
+  },
+  "initial_blocks": [
+    {
+      "marker": "shared_chest",
+      "block": "chest"
+    },
+    {
+      "marker": "poster_wall",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_a",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_b",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_c",
+      "block": "lantern"
+    },
+    {
+      "marker": "morgan_work_area",
+      "block": "stone"
+    }
+  ],
+  "stimulus": {
+    "setup": "Scenario: The players are in a superflat Minecraft project table area. Chat is disabled. The group task is to arrange a shared planning table using wood slabs, signs, item frames, and lantern markers.\nMap layout: {'world': 'superflat', 'table_area': 'x=-6..6, z=-6..6', 'riley_station': 'x=-3..0, z=0..2', 'morgan_station': 'x=3..6, z=0..2', 'shared_chest': 'x=0, y=64, z=-5', 'signal_lamp': 'x=0, y=64, z=6', 'observer_line': 'x=-5,0,5, z=-2'}",
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan places one wood slab and turns toward the center.",
+      "Riley": "Riley places two wood slabs on Riley's side of the planning table, adds one sign block, and steps back to look across the table.",
+      "Casey": "Casey places one lantern marker on the left corner of the table and stands where the table surface is visible.",
+      "Taylor": "Taylor sorts signs and slabs in the shared chest, closes it, and faces the table.",
+      "Jordan": "Jordan places a stone marker near the signal lamp and looks toward the project table."
+    },
+    "target_action": "Riley places two wood slabs on Riley's side of the planning table, adds one sign block, and steps back to look across the table.",
+    "scripted_visible_incident": "Morgan walks to the center of the planning table and faces Riley without moving for several seconds. Morgan swings an empty hand three times toward the sign Riley placed. Morgan drops a stack of rotten flesh at Riley's feet, breaks one wood slab on Riley's side of the table, then turns back to face Riley again."
+  },
+  "source_actions": {
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan places one wood slab and turns toward the center.",
+      "Riley": "Riley places two wood slabs on Riley's side of the planning table, adds one sign block, and steps back to look across the table.",
+      "Casey": "Casey places one lantern marker on the left corner of the table and stands where the table surface is visible.",
+      "Taylor": "Taylor sorts signs and slabs in the shared chest, closes it, and faces the table.",
+      "Jordan": "Jordan places a stone marker near the signal lamp and looks toward the project table."
+    },
+    "scripted_visible_incident": "Morgan walks to the center of the planning table and faces Riley without moving for several seconds. Morgan swings an empty hand three times toward the sign Riley placed. Morgan drops a stack of rotten flesh at Riley's feet, breaks one wood slab on Riley's side of the table, then turns back to face Riley again.",
+    "observer_actions": {
+      "Casey": "Casey steps between Riley and the center, picks up the rotten flesh, jogs to the shared chest to deposit it, returns to Riley’s side, replaces the broken slab, places two lanterns and two item frames to outline a two-block-wide corridor between Riley’s and Morgan’s sides, and holds position on the corridor edge facing Morgan.",
+      "Taylor": "Taylor takes two steps back to the observer line at x=0, z=-2, slowly circles right to x=5, z=-2 while keeping view on Riley and Morgan, then moves to the shared chest, opens it, deposits any picked-up slabs or signs, closes it, and returns to a vantage point at x=3, z=-2 facing the table.",
+      "Jordan": "Jordan moves between Morgan and Riley, picks up the rotten flesh, places it into the shared chest, repairs the broken wood slab on Riley’s side, places a matching wood slab on Morgan’s side, then toggles the signal lamp with the stone marker."
+    },
+    "target_reaction": "Riley takes two slow steps back from the table, angles slightly toward Casey’s side, and moves to an open spot a few blocks away near the observer line with empty hands. Riley glances briefly at the shared chest, then at the signal lamp, and settles standing where the whole table remains visible."
+  },
+  "migration_report": {
+    "summary": {
+      "agents_mapped": 4,
+      "parseability_rate": 1.0,
+      "mean_primitive_coverage": 1.0,
+      "total_primitives": 14,
+      "unsupported_intent_count": 0
+    },
+    "per_agent": [
+      {
+        "agent": "Riley",
+        "source_action": "Riley takes two slow steps back from the table, angles slightly toward Casey’s side, and moves to an open spot a few blocks away near the observer line with empty hands. Riley glances briefly at the shared chest, then at the signal lamp, and settles standing where the whole table remains visible.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor",
+          "nonverbal_signal"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 3,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Casey",
+        "source_action": "Casey steps between Riley and the center, picks up the rotten flesh, jogs to the shared chest to deposit it, returns to Riley’s side, replaces the broken slab, places two lanterns and two item frames to outline a two-block-wide corridor between Riley’s and Morgan’s sides, and holds position on the corridor edge facing Morgan.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "direct_intervention",
+          "face_aggressor",
+          "repair_or_restore"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 4,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Taylor",
+        "source_action": "Taylor takes two steps back to the observer line at x=0, z=-2, slowly circles right to x=5, z=-2 while keeping view on Riley and Morgan, then moves to the shared chest, opens it, deposits any picked-up slabs or signs, closes it, and returns to a vantage point at x=3, z=-2 facing the table.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 2,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Jordan",
+        "source_action": "Jordan moves between Morgan and Riley, picks up the rotten flesh, places it into the shared chest, repairs the broken wood slab on Riley’s side, places a matching wood slab on Morgan’s side, then toggles the signal lamp with the stone marker.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "direct_intervention",
+          "face_aggressor",
+          "repair_or_restore",
+          "nonverbal_signal"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 5,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "t": 20,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_work_area",
+      "range": 2
+    },
+    {
+      "t": 24,
+      "agent": "Morgan",
+      "cmd": "look_at_block",
+      "target": "morgan_work_area"
+    },
+    {
+      "t": 28,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Morgan places one wood slab and turns toward the center."
+    },
+    {
+      "t": 30,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "riley_work_area",
+      "range": 2
+    },
+    {
+      "t": 34,
+      "agent": "Riley",
+      "cmd": "look_at_block",
+      "target": "riley_work_area"
+    },
+    {
+      "t": 38,
+      "agent": "Riley",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Riley places two wood slabs on Riley's side of the planning table, adds one sign block, and steps back to look across the table."
+    },
+    {
+      "t": 40,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "shared_chest",
+      "range": 2
+    },
+    {
+      "t": 44,
+      "agent": "Casey",
+      "cmd": "look_at_block",
+      "target": "shared_chest"
+    },
+    {
+      "t": 48,
+      "agent": "Casey",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Casey places one lantern marker on the left corner of the table and stands where the table surface is visible."
+    },
+    {
+      "t": 50,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "group_center",
+      "range": 2
+    },
+    {
+      "t": 54,
+      "agent": "Taylor",
+      "cmd": "look_at_block",
+      "target": "group_center"
+    },
+    {
+      "t": 58,
+      "agent": "Taylor",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Taylor sorts signs and slabs in the shared chest, closes it, and faces the table."
+    },
+    {
+      "t": 60,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "poster_wall",
+      "range": 2
+    },
+    {
+      "t": 64,
+      "agent": "Jordan",
+      "cmd": "look_at_block",
+      "target": "poster_wall"
+    },
+    {
+      "t": 68,
+      "agent": "Jordan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Jordan places a stone marker near the signal lamp and looks toward the project table."
+    },
+    {
+      "t": 140,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_near_riley",
+      "range": 1
+    },
+    {
+      "t": 148,
+      "agent": "Morgan",
+      "cmd": "look_at_agent",
+      "target": "Riley"
+    },
+    {
+      "t": 156,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 2
+    },
+    {
+      "t": 168,
+      "agent": "Morgan",
+      "cmd": "dig_block",
+      "target": "damaged_block_a"
+    },
+    {
+      "t": 182,
+      "agent": "Morgan",
+      "cmd": "stand",
+      "ticks": 25
+    },
+    {
+      "t": 390,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Riley takes two slow steps back from the table, angles slightly toward Casey’s side, and moves to an open spot a few blocks away near the observer line with empty hands. Riley glan"
+    },
+    {
+      "t": 396,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Riley takes two slow steps back from the table, angles slightly toward Casey’s side, and moves to an open spot a few blocks away near the observer line with empty hands. Riley glan"
+    },
+    {
+      "t": 432,
+      "agent": "Riley",
+      "cmd": "swing_arm",
+      "repeat": 2,
+      "source_action_excerpt": "Riley takes two slow steps back from the table, angles slightly toward Casey’s side, and moves to an open spot a few blocks away near the observer line with empty hands. Riley glan"
+    },
+    {
+      "t": 470,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Casey steps between Riley and the center, picks up the rotten flesh, jogs to the shared chest to deposit it, returns to Riley’s side, replaces the broken slab, places two lanterns "
+    },
+    {
+      "t": 480,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Casey steps between Riley and the center, picks up the rotten flesh, jogs to the shared chest to deposit it, returns to Riley’s side, replaces the broken slab, places two lanterns "
+    },
+    {
+      "t": 486,
+      "agent": "Casey",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Casey steps between Riley and the center, picks up the rotten flesh, jogs to the shared chest to deposit it, returns to Riley’s side, replaces the broken slab, places two lanterns "
+    },
+    {
+      "t": 500,
+      "agent": "Casey",
+      "cmd": "place_block",
+      "target": "chest_front",
+      "block": "oak_planks",
+      "source_action_excerpt": "Casey steps between Riley and the center, picks up the rotten flesh, jogs to the shared chest to deposit it, returns to Riley’s side, replaces the broken slab, places two lanterns "
+    },
+    {
+      "t": 550,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Taylor takes two steps back to the observer line at x=0, z=-2, slowly circles right to x=5, z=-2 while keeping view on Riley and Morgan, then moves to the shared chest, opens it, d"
+    },
+    {
+      "t": 556,
+      "agent": "Taylor",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Taylor takes two steps back to the observer line at x=0, z=-2, slowly circles right to x=5, z=-2 while keeping view on Riley and Morgan, then moves to the shared chest, opens it, d"
+    },
+    {
+      "t": 630,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, picks up the rotten flesh, places it into the shared chest, repairs the broken wood slab on Riley’s side, places a matching wood slab on Morg"
+    },
+    {
+      "t": 640,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, picks up the rotten flesh, places it into the shared chest, repairs the broken wood slab on Riley’s side, places a matching wood slab on Morg"
+    },
+    {
+      "t": 646,
+      "agent": "Jordan",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, picks up the rotten flesh, places it into the shared chest, repairs the broken wood slab on Riley’s side, places a matching wood slab on Morg"
+    },
+    {
+      "t": 660,
+      "agent": "Jordan",
+      "cmd": "place_block",
+      "target": "chest_front",
+      "block": "oak_planks",
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, picks up the rotten flesh, places it into the shared chest, repairs the broken wood slab on Riley’s side, places a matching wood slab on Morg"
+    },
+    {
+      "t": 672,
+      "agent": "Jordan",
+      "cmd": "swing_arm",
+      "repeat": 2,
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, picks up the rotten flesh, places it into the shared chest, repairs the broken wood slab on Riley’s side, places a matching wood slab on Morg"
+    }
+  ]
+}

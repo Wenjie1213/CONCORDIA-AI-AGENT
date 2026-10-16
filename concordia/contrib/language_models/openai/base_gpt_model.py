@@ -27,6 +27,21 @@ _MAX_MULTIPLE_CHOICE_ATTEMPTS = 20
 _DEFAULT_VERBOSITY = 'low'
 
 
+def _supports_reasoning_effort(model_name: str) -> bool:
+  """Returns whether chat completions should receive reasoning_effort."""
+  return (
+      model_name.startswith('gpt-5')
+      or model_name.startswith('o1')
+      or model_name.startswith('o3')
+      or model_name.startswith('o4')
+  )
+
+
+def _supports_verbosity(model_name: str) -> bool:
+  """Returns whether chat completions should receive verbosity."""
+  return model_name.startswith('gpt-5')
+
+
 class BaseGPTModel(language_model.LanguageModel):
   """Base class for GPT models (OpenAI and Azure).
 
@@ -90,17 +105,21 @@ class BaseGPTModel(language_model.LanguageModel):
         {'role': 'user', 'content': prompt},
     ]
 
+    request = {
+        'model': self._model_name,
+        'messages': messages,
+        'temperature': temperature,
+        'max_completion_tokens': max_tokens,
+        'timeout': timeout,
+        'seed': seed,
+    }
+    if _supports_reasoning_effort(self._model_name):
+      request['reasoning_effort'] = reasoning_effort
+    if _supports_verbosity(self._model_name):
+      request['verbosity'] = verbosity
+
     # pyrefly: ignore [no-matching-overload]
-    response = self._client.chat.completions.create(
-        model=self._model_name,
-        messages=messages,
-        temperature=temperature,
-        max_completion_tokens=max_tokens,
-        timeout=timeout,
-        seed=seed,
-        reasoning_effort=reasoning_effort,
-        verbosity=verbosity,
-    )
+    response = self._client.chat.completions.create(**request)
 
     if self._measurements is not None:
       self._measurements.publish_datum(

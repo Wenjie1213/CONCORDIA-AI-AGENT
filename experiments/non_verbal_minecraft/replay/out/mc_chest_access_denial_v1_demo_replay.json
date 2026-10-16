@@ -1,0 +1,627 @@
+{
+  "schema": "non_verbal_minecraft_replay_v2",
+  "source_json": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_chest_access_denial_v1\\batch_chest_access_denial_gpt-5_realembed_no-relmem_20260813_155950\\runs\\20260813_155950_gpt-5_realembed_no-relmem_001.json",
+  "scenario_id": "mc_chest_access_denial_v1",
+  "scenario": "Minecraft Chest Access Denial",
+  "run_id": "20260813_155950_gpt-5_realembed_no-relmem_001",
+  "agents": {
+    "Morgan": {
+      "role": "scripted_actor",
+      "spawn": {
+        "x": 8,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Riley": {
+      "role": "target",
+      "spawn": {
+        "x": -3,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 3,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Casey": {
+      "role": "observer",
+      "spawn": {
+        "x": -7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Taylor": {
+      "role": "observer",
+      "spawn": {
+        "x": 0,
+        "y": 64,
+        "z": -6
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Jordan": {
+      "role": "observer",
+      "spawn": {
+        "x": 7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    }
+  },
+  "world": {
+    "minecraft_version": "1.20.1",
+    "world_type": "flat",
+    "origin": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "bounds": {
+      "min": {
+        "x": -22,
+        "y": 63,
+        "z": -18
+      },
+      "max": {
+        "x": 22,
+        "y": 72,
+        "z": 18
+      }
+    },
+    "viewer": {
+      "agent": "Casey",
+      "port": 3000,
+      "firstPerson": false,
+      "viewDistance": 7
+    }
+  },
+  "markers": {
+    "group_center": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "riley_work_area": {
+      "x": -4,
+      "y": 64,
+      "z": 2
+    },
+    "riley_safe_area": {
+      "x": -8,
+      "y": 64,
+      "z": 4
+    },
+    "riley_spawn": {
+      "x": -3,
+      "y": 64,
+      "z": 1
+    },
+    "riley_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "morgan_work_area": {
+      "x": 5,
+      "y": 64,
+      "z": 2
+    },
+    "shared_chest": {
+      "x": 0,
+      "y": 64,
+      "z": 4
+    },
+    "chest_front": {
+      "x": 0,
+      "y": 64,
+      "z": 3
+    },
+    "poster_wall": {
+      "x": -5,
+      "y": 65,
+      "z": 5
+    },
+    "poster_cover": {
+      "x": -5,
+      "y": 65,
+      "z": 4
+    },
+    "barrier_left": {
+      "x": -2,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_mid": {
+      "x": -1,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_right": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "morgan_near_riley": {
+      "x": -2,
+      "y": 64,
+      "z": 2
+    },
+    "morgan_blocking_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "observer_intercept": {
+      "x": -1,
+      "y": 64,
+      "z": 2
+    },
+    "observer_support": {
+      "x": -5,
+      "y": 64,
+      "z": 2
+    },
+    "observer_report": {
+      "x": 3,
+      "y": 64,
+      "z": -6
+    },
+    "observer_withdraw": {
+      "x": 9,
+      "y": 64,
+      "z": -8
+    },
+    "mocking_signal_spot": {
+      "x": 1,
+      "y": 64,
+      "z": 2
+    },
+    "damaged_block_a": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_b": {
+      "x": -3,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_c": {
+      "x": -4,
+      "y": 65,
+      "z": 3
+    },
+    "replacement_block": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "spawn_trap_a": {
+      "x": -4,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_b": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_c": {
+      "x": -3,
+      "y": 64,
+      "z": 0
+    },
+    "spawn_trap_d": {
+      "x": -3,
+      "y": 64,
+      "z": 2
+    }
+  },
+  "initial_blocks": [
+    {
+      "marker": "shared_chest",
+      "block": "chest"
+    },
+    {
+      "marker": "poster_wall",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_a",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_b",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_c",
+      "block": "lantern"
+    },
+    {
+      "marker": "morgan_work_area",
+      "block": "stone"
+    }
+  ],
+  "stimulus": {
+    "setup": "Scenario: The players are in a superflat Minecraft shared storage area. Chat is disabled. The group task is to collect materials from the shared chest and add matching walls to a small village center. Everyone can see the shared chest, Riley's workbench, Morgan's workbench, the observer line, and the redstone signal lamp.\nMap layout: {'world': 'superflat', 'shared_area': 'x=-8..8, z=-8..8', 'shared_chest': 'x=0, y=64, z=0', 'resource_wall': 'x=-2..2, z=1', 'riley_workbench': 'x=-5, y=64, z=2', 'morgan_workbench': 'x=5, y=64, z=2', 'signal_lamp': 'x=0, y=64, z=7', 'observer_line': 'x=-6,2,6, z=-3'}",
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan stands near Morgan's workbench, places two oak planks on a wall segment, then turns toward the shared chest.",
+      "Riley": "Riley walks to the shared chest, opens it, takes a small stack of oak planks and flowers, closes the chest, walks to Riley's workbench, and places two oak planks beside the unfinished wall.",
+      "Casey": "Casey walks from the shared chest to the resource wall, places one cobblestone block, and pauses where the chest path remains visible.",
+      "Taylor": "Taylor sorts flowers inside the shared chest, closes it, and steps back toward the observer line while facing the storage area.",
+      "Jordan": "Jordan places one marker block beside the signal lamp, checks the route from the chest to both workbenches, and faces the shared chest."
+    },
+    "target_action": "Riley walks to the shared chest, opens it, takes a small stack of oak planks and flowers, closes the chest, walks to Riley's workbench, and places two oak planks beside the unfinished wall.",
+    "scripted_visible_incident": "Morgan walks quickly to the shared chest as Riley turns back toward it. Morgan stands directly in front of the chest. Morgan opens the chest and removes most of the remaining oak planks and flowers. Morgan places two cobblestone blocks in front of the chest access path. Morgan drops three dirt blocks at Riley's feet, turns toward Taylor, crouches repeatedly twice, and stays standing between Riley and the chest."
+  },
+  "source_actions": {
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan stands near Morgan's workbench, places two oak planks on a wall segment, then turns toward the shared chest.",
+      "Riley": "Riley walks to the shared chest, opens it, takes a small stack of oak planks and flowers, closes the chest, walks to Riley's workbench, and places two oak planks beside the unfinished wall.",
+      "Casey": "Casey walks from the shared chest to the resource wall, places one cobblestone block, and pauses where the chest path remains visible.",
+      "Taylor": "Taylor sorts flowers inside the shared chest, closes it, and steps back toward the observer line while facing the storage area.",
+      "Jordan": "Jordan places one marker block beside the signal lamp, checks the route from the chest to both workbenches, and faces the shared chest."
+    },
+    "scripted_visible_incident": "Morgan walks quickly to the shared chest as Riley turns back toward it. Morgan stands directly in front of the chest. Morgan opens the chest and removes most of the remaining oak planks and flowers. Morgan places two cobblestone blocks in front of the chest access path. Morgan drops three dirt blocks at Riley's feet, turns toward Taylor, crouches repeatedly twice, and stays standing between Riley and the chest.",
+    "observer_actions": {
+      "Casey": "Casey moves to the chest path beside Riley, breaks the two cobblestone blockers, steps shoulder-to-shoulder with Riley to hold the lane, places a line of marker blocks along the floor edge of the access lane, pivots to face and block Morgan’s re-entry angle, briefly opens the chest, then moves parallel with Riley toward the workbench, ready to replace any removed boundary markers.",
+      "Taylor": "Taylor steps forward from the observer line, breaks the two cobblestone blocks blocking the chest path, picks up the three dirt blocks, places the dirt at the edge of the resource wall, then steps back to a spot with a clear view of the chest and both workbench paths.",
+      "Jordan": "Jordan moves to the cobblestone blocks in front of the chest, breaks both blocks to clear the path, opens the shared chest, returns half of the oak planks and flowers, walks to Riley, and drops a fair share of oak planks and flowers at Riley’s feet."
+    },
+    "target_reaction": "Riley steps back two blocks from the chest path, turns slightly toward Riley’s workbench, picks up one of the dropped dirt blocks, then walks slowly along the edge of the shared area toward the observer line, stopping in a clear spot with a calm stance while facing the chest from a safe distance."
+  },
+  "migration_report": {
+    "summary": {
+      "agents_mapped": 4,
+      "parseability_rate": 1.0,
+      "mean_primitive_coverage": 1.0,
+      "total_primitives": 17,
+      "unsupported_intent_count": 0
+    },
+    "per_agent": [
+      {
+        "agent": "Riley",
+        "source_action": "Riley steps back two blocks from the chest path, turns slightly toward Riley’s workbench, picks up one of the dropped dirt blocks, then walks slowly along the edge of the shared area toward the observer line, stopping in a clear spot with a calm stance while facing the chest from a safe distance.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor",
+          "direct_intervention",
+          "face_aggressor",
+          "remove_blocking_or_harmful_block",
+          "withdraw_or_keep_distance"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 6,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Casey",
+        "source_action": "Casey moves to the chest path beside Riley, breaks the two cobblestone blockers, steps shoulder-to-shoulder with Riley to hold the lane, places a line of marker blocks along the floor edge of the access lane, pivots to face and block Morgan’s re-entry angle, briefly opens the chest, then moves parallel with Riley toward the workbench, ready to replace any removed boundary markers.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "direct_intervention",
+          "face_aggressor",
+          "repair_or_restore",
+          "remove_blocking_or_harmful_block",
+          "place_boundary"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 6,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Taylor",
+        "source_action": "Taylor steps forward from the observer line, breaks the two cobblestone blocks blocking the chest path, picks up the three dirt blocks, places the dirt at the edge of the resource wall, then steps back to a spot with a clear view of the chest and both workbench paths.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor",
+          "remove_blocking_or_harmful_block"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 3,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Jordan",
+        "source_action": "Jordan moves to the cobblestone blocks in front of the chest, breaks both blocks to clear the path, opens the shared chest, returns half of the oak planks and flowers, walks to Riley, and drops a fair share of oak planks and flowers at Riley’s feet.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "remove_blocking_or_harmful_block"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 2,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "t": 20,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_work_area",
+      "range": 2
+    },
+    {
+      "t": 24,
+      "agent": "Morgan",
+      "cmd": "look_at_block",
+      "target": "morgan_work_area"
+    },
+    {
+      "t": 28,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Morgan stands near Morgan's workbench, places two oak planks on a wall segment, then turns toward the shared chest."
+    },
+    {
+      "t": 30,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "riley_work_area",
+      "range": 2
+    },
+    {
+      "t": 34,
+      "agent": "Riley",
+      "cmd": "look_at_block",
+      "target": "riley_work_area"
+    },
+    {
+      "t": 38,
+      "agent": "Riley",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Riley walks to the shared chest, opens it, takes a small stack of oak planks and flowers, closes the chest, walks to Riley's workbench, and places two oak planks beside the unfinished wall."
+    },
+    {
+      "t": 40,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "shared_chest",
+      "range": 2
+    },
+    {
+      "t": 44,
+      "agent": "Casey",
+      "cmd": "look_at_block",
+      "target": "shared_chest"
+    },
+    {
+      "t": 48,
+      "agent": "Casey",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Casey walks from the shared chest to the resource wall, places one cobblestone block, and pauses where the chest path remains visible."
+    },
+    {
+      "t": 50,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "group_center",
+      "range": 2
+    },
+    {
+      "t": 54,
+      "agent": "Taylor",
+      "cmd": "look_at_block",
+      "target": "group_center"
+    },
+    {
+      "t": 58,
+      "agent": "Taylor",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Taylor sorts flowers inside the shared chest, closes it, and steps back toward the observer line while facing the storage area."
+    },
+    {
+      "t": 60,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "poster_wall",
+      "range": 2
+    },
+    {
+      "t": 64,
+      "agent": "Jordan",
+      "cmd": "look_at_block",
+      "target": "poster_wall"
+    },
+    {
+      "t": 68,
+      "agent": "Jordan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Jordan places one marker block beside the signal lamp, checks the route from the chest to both workbenches, and faces the shared chest."
+    },
+    {
+      "t": 140,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "shared_chest",
+      "range": 1
+    },
+    {
+      "t": 148,
+      "agent": "Morgan",
+      "cmd": "look_at_agent",
+      "target": "Riley"
+    },
+    {
+      "t": 154,
+      "agent": "Morgan",
+      "cmd": "place_block",
+      "target": "chest_front",
+      "block": "cobblestone"
+    },
+    {
+      "t": 168,
+      "agent": "Morgan",
+      "cmd": "stand",
+      "ticks": 30
+    },
+    {
+      "t": 188,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 2
+    },
+    {
+      "t": 390,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Riley steps back two blocks from the chest path, turns slightly toward Riley’s workbench, picks up one of the dropped dirt blocks, then walks slowly along the edge of the shared ar"
+    },
+    {
+      "t": 396,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Riley steps back two blocks from the chest path, turns slightly toward Riley’s workbench, picks up one of the dropped dirt blocks, then walks slowly along the edge of the shared ar"
+    },
+    {
+      "t": 400,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Riley steps back two blocks from the chest path, turns slightly toward Riley’s workbench, picks up one of the dropped dirt blocks, then walks slowly along the edge of the shared ar"
+    },
+    {
+      "t": 406,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Riley steps back two blocks from the chest path, turns slightly toward Riley’s workbench, picks up one of the dropped dirt blocks, then walks slowly along the edge of the shared ar"
+    },
+    {
+      "t": 424,
+      "agent": "Riley",
+      "cmd": "dig_block",
+      "target": "chest_front",
+      "source_action_excerpt": "Riley steps back two blocks from the chest path, turns slightly toward Riley’s workbench, picks up one of the dropped dirt blocks, then walks slowly along the edge of the shared ar"
+    },
+    {
+      "t": 440,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "observer_withdraw",
+      "range": 1,
+      "source_action_excerpt": "Riley steps back two blocks from the chest path, turns slightly toward Riley’s workbench, picks up one of the dropped dirt blocks, then walks slowly along the edge of the shared ar"
+    },
+    {
+      "t": 470,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Casey moves to the chest path beside Riley, breaks the two cobblestone blockers, steps shoulder-to-shoulder with Riley to hold the lane, places a line of marker blocks along the fl"
+    },
+    {
+      "t": 480,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Casey moves to the chest path beside Riley, breaks the two cobblestone blockers, steps shoulder-to-shoulder with Riley to hold the lane, places a line of marker blocks along the fl"
+    },
+    {
+      "t": 486,
+      "agent": "Casey",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Casey moves to the chest path beside Riley, breaks the two cobblestone blockers, steps shoulder-to-shoulder with Riley to hold the lane, places a line of marker blocks along the fl"
+    },
+    {
+      "t": 500,
+      "agent": "Casey",
+      "cmd": "place_block",
+      "target": "chest_front",
+      "block": "oak_planks",
+      "source_action_excerpt": "Casey moves to the chest path beside Riley, breaks the two cobblestone blockers, steps shoulder-to-shoulder with Riley to hold the lane, places a line of marker blocks along the fl"
+    },
+    {
+      "t": 504,
+      "agent": "Casey",
+      "cmd": "dig_block",
+      "target": "chest_front",
+      "source_action_excerpt": "Casey moves to the chest path beside Riley, breaks the two cobblestone blockers, steps shoulder-to-shoulder with Riley to hold the lane, places a line of marker blocks along the fl"
+    },
+    {
+      "t": 508,
+      "agent": "Casey",
+      "cmd": "place_block",
+      "target": "barrier_mid",
+      "block": "glass",
+      "source_action_excerpt": "Casey moves to the chest path beside Riley, breaks the two cobblestone blockers, steps shoulder-to-shoulder with Riley to hold the lane, places a line of marker blocks along the fl"
+    },
+    {
+      "t": 550,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Taylor steps forward from the observer line, breaks the two cobblestone blocks blocking the chest path, picks up the three dirt blocks, places the dirt at the edge of the resource "
+    },
+    {
+      "t": 556,
+      "agent": "Taylor",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Taylor steps forward from the observer line, breaks the two cobblestone blocks blocking the chest path, picks up the three dirt blocks, places the dirt at the edge of the resource "
+    },
+    {
+      "t": 584,
+      "agent": "Taylor",
+      "cmd": "dig_block",
+      "target": "chest_front",
+      "source_action_excerpt": "Taylor steps forward from the observer line, breaks the two cobblestone blocks blocking the chest path, picks up the three dirt blocks, places the dirt at the edge of the resource "
+    },
+    {
+      "t": 630,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Jordan moves to the cobblestone blocks in front of the chest, breaks both blocks to clear the path, opens the shared chest, returns half of the oak planks and flowers, walks to Ril"
+    },
+    {
+      "t": 664,
+      "agent": "Jordan",
+      "cmd": "dig_block",
+      "target": "chest_front",
+      "source_action_excerpt": "Jordan moves to the cobblestone blocks in front of the chest, breaks both blocks to clear the path, opens the shared chest, returns half of the oak planks and flowers, walks to Ril"
+    }
+  ]
+}

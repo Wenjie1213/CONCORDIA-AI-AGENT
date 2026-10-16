@@ -1,0 +1,15 @@
+scenario_id,runs,mean_parseability_rate,mean_primitive_coverage,mean_unsupported_intent_rate,mean_total_primitives,schema_valid_rate,migration_recommended_rate,recommended_runs
+mc_aggressive_gesture_v1,20,1.0,1.0,0.0,15.6,1.0,1.0,20
+mc_chest_access_denial_v1,20,1.0,1.0,0.0,12.4,1.0,1.0,20
+mc_coordinated_exclusion_v1,20,1.0,1.0,0.0,13.6,1.0,1.0,20
+mc_following_crowding_v1,20,1.0,1.0,0.0,15.3,1.0,1.0,20
+mc_personal_build_destruction_v1,20,1.0,1.0,0.0,16.65,1.0,1.0,20
+mc_physical_intimidation_v1,20,0.9875,0.9875,0.0125,14.75,1.0,0.95,19
+mc_poster_covering_v1,20,1.0,1.0,0.0,19.05,1.0,1.0,20
+mc_property_directed_aggression_v1,20,0.9875,0.9812,0.0125,12.55,1.0,0.95,19
+mc_repeated_escalation_v1,20,1.0,1.0,0.0,12.45,1.0,1.0,20
+mc_shared_build_visible_object_disruption_v1,20,1.0,1.0,0.0,16.15,1.0,1.0,20
+mc_signal_based_mocking_v1,20,1.0,1.0,0.0,16.0,1.0,1.0,20
+mc_silent_hostility_v1,20,1.0,1.0,0.0,9.35,1.0,1.0,20
+mc_social_exclusion_v1,20,1.0,1.0,0.0,15.3,1.0,1.0,20
+mc_spawn_trapping_v1,20,1.0,1.0,0.0,12.3,1.0,1.0,20

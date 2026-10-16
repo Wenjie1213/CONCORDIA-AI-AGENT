@@ -1,0 +1,627 @@
+{
+  "schema": "non_verbal_minecraft_replay_v2",
+  "source_json": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_coordinated_exclusion_v1\\batch_coordinated_exclusion_gpt-5_realembed_no-relmem_20260813_161153\\runs\\20260813_161153_gpt-5_realembed_no-relmem_001.json",
+  "scenario_id": "mc_coordinated_exclusion_v1",
+  "scenario": "Minecraft Coordinated Exclusion",
+  "run_id": "20260813_161153_gpt-5_realembed_no-relmem_001",
+  "agents": {
+    "Morgan": {
+      "role": "scripted_actor",
+      "spawn": {
+        "x": 8,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Riley": {
+      "role": "target",
+      "spawn": {
+        "x": -3,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 3,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Casey": {
+      "role": "observer",
+      "spawn": {
+        "x": -7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Taylor": {
+      "role": "observer",
+      "spawn": {
+        "x": 0,
+        "y": 64,
+        "z": -6
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Jordan": {
+      "role": "observer",
+      "spawn": {
+        "x": 7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    }
+  },
+  "world": {
+    "minecraft_version": "1.20.1",
+    "world_type": "flat",
+    "origin": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "bounds": {
+      "min": {
+        "x": -22,
+        "y": 63,
+        "z": -18
+      },
+      "max": {
+        "x": 22,
+        "y": 72,
+        "z": 18
+      }
+    },
+    "viewer": {
+      "agent": "Casey",
+      "port": 3000,
+      "firstPerson": false,
+      "viewDistance": 7
+    }
+  },
+  "markers": {
+    "group_center": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "riley_work_area": {
+      "x": -4,
+      "y": 64,
+      "z": 2
+    },
+    "riley_safe_area": {
+      "x": -8,
+      "y": 64,
+      "z": 4
+    },
+    "riley_spawn": {
+      "x": -3,
+      "y": 64,
+      "z": 1
+    },
+    "riley_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "morgan_work_area": {
+      "x": 5,
+      "y": 64,
+      "z": 2
+    },
+    "shared_chest": {
+      "x": 0,
+      "y": 64,
+      "z": 4
+    },
+    "chest_front": {
+      "x": 0,
+      "y": 64,
+      "z": 3
+    },
+    "poster_wall": {
+      "x": -5,
+      "y": 65,
+      "z": 5
+    },
+    "poster_cover": {
+      "x": -5,
+      "y": 65,
+      "z": 4
+    },
+    "barrier_left": {
+      "x": -2,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_mid": {
+      "x": -1,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_right": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "morgan_near_riley": {
+      "x": -2,
+      "y": 64,
+      "z": 2
+    },
+    "morgan_blocking_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "observer_intercept": {
+      "x": -1,
+      "y": 64,
+      "z": 2
+    },
+    "observer_support": {
+      "x": -5,
+      "y": 64,
+      "z": 2
+    },
+    "observer_report": {
+      "x": 3,
+      "y": 64,
+      "z": -6
+    },
+    "observer_withdraw": {
+      "x": 9,
+      "y": 64,
+      "z": -8
+    },
+    "mocking_signal_spot": {
+      "x": 1,
+      "y": 64,
+      "z": 2
+    },
+    "damaged_block_a": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_b": {
+      "x": -3,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_c": {
+      "x": -4,
+      "y": 65,
+      "z": 3
+    },
+    "replacement_block": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "spawn_trap_a": {
+      "x": -4,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_b": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_c": {
+      "x": -3,
+      "y": 64,
+      "z": 0
+    },
+    "spawn_trap_d": {
+      "x": -3,
+      "y": 64,
+      "z": 2
+    }
+  },
+  "initial_blocks": [
+    {
+      "marker": "shared_chest",
+      "block": "chest"
+    },
+    {
+      "marker": "poster_wall",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_a",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_b",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_c",
+      "block": "lantern"
+    },
+    {
+      "marker": "morgan_work_area",
+      "block": "stone"
+    }
+  ],
+  "stimulus": {
+    "setup": "Scenario: The players are in a superflat Minecraft village-center workspace. Chat is disabled. The group task is to build one connected shared plaza using materials from the shared chest. Everyone can see Riley's area, the group workspace, the shared chest, the observer line, and the redstone signal lamp.\nMap layout: {'world': 'superflat', 'group_workspace': 'x=-6..6, z=0..6', 'riley_area': 'x=-6..-3, z=1..4', 'group_material_drop': 'x=2, y=64, z=2', 'shared_chest': 'x=0, y=64, z=-4', 'signal_lamp': 'x=0, y=64, z=8', 'observer_line': 'x=-6,0,6, z=-2'}",
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan places one oak plank near the group material drop and turns toward Riley's area.",
+      "Riley": "Riley walks to Riley's area, places three stone slabs that connect toward the group workspace, adds one lantern beside the slabs, and turns toward the group material drop area.",
+      "Casey": "Casey places two stone slabs in the group workspace and pauses where Riley's connecting slabs are visible.",
+      "Taylor": "Taylor opens the shared chest, moves oak planks into one slot, closes the chest, and returns to the observer line.",
+      "Jordan": "Jordan places a marker block near the signal lamp and turns to face the whole shared plaza."
+    },
+    "target_action": "Riley walks to Riley's area, places three stone slabs that connect toward the group workspace, adds one lantern beside the slabs, and turns toward the group material drop area.",
+    "scripted_visible_incident": "Morgan walks to the edge of Riley's area and places four cobblestone blocks in a low wall between Riley's slabs and the group workspace. Morgan drops oak planks near Casey and Jordan but drops none near Riley. Morgan places two red wool marker blocks at the edge of Riley's area, then turns toward Taylor and Jordan and crouches repeatedly twice beside the material drop."
+  },
+  "source_actions": {
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan places one oak plank near the group material drop and turns toward Riley's area.",
+      "Riley": "Riley walks to Riley's area, places three stone slabs that connect toward the group workspace, adds one lantern beside the slabs, and turns toward the group material drop area.",
+      "Casey": "Casey places two stone slabs in the group workspace and pauses where Riley's connecting slabs are visible.",
+      "Taylor": "Taylor opens the shared chest, moves oak planks into one slot, closes the chest, and returns to the observer line.",
+      "Jordan": "Jordan places a marker block near the signal lamp and turns to face the whole shared plaza."
+    },
+    "scripted_visible_incident": "Morgan walks to the edge of Riley's area and places four cobblestone blocks in a low wall between Riley's slabs and the group workspace. Morgan drops oak planks near Casey and Jordan but drops none near Riley. Morgan places two red wool marker blocks at the edge of Riley's area, then turns toward Taylor and Jordan and crouches repeatedly twice beside the material drop.",
+    "observer_actions": {
+      "Casey": "Casey steps into the blocked gap, breaks the four cobblestone in the low wall to reopen the path, extends Riley’s stone slabs two tiles into the group workspace, places two counter-marker blocks flanking the reopened corridor, picks up a portion of the nearby dropped oak planks and moves to Riley to drop them on Riley’s side, then returns to stand in the reopened passage.",
+      "Taylor": "Taylor steps back onto the observer line, slowly pans view between Riley’s blocked path, the cobblestone wall, and the shared chest, then glances at the redstone lamp and holds position without taking items.",
+      "Jordan": "Jordan walks to the low cobblestone wall between Riley’s slabs and the group workspace and breaks two central cobblestone blocks to reopen the path, then picks up a few of the dropped oak planks and places one small stack beside Riley’s slabs, one beside Casey’s build area, and one at the shared material drop."
+    },
+    "target_reaction": "Riley steps back two blocks from the new wall, pauses facing the plaza, then walks in a gentle arc along the boundary to a clear, unmarked spot nearer the group workspace without crossing red markers; places one lantern on the ground on Riley’s side of the boundary; turns and walks toward the observer line, stopping a few blocks behind a supportive bystander; waits calmly, then returns to their slabs and extends the path by placing one additional stone slab in a non-contested direction away from the blockers."
+  },
+  "migration_report": {
+    "summary": {
+      "agents_mapped": 4,
+      "parseability_rate": 1.0,
+      "mean_primitive_coverage": 1.0,
+      "total_primitives": 16,
+      "unsupported_intent_count": 0
+    },
+    "per_agent": [
+      {
+        "agent": "Riley",
+        "source_action": "Riley steps back two blocks from the new wall, pauses facing the plaza, then walks in a gentle arc along the boundary to a clear, unmarked spot nearer the group workspace without crossing red markers; places one lantern on the ground on Riley’s side of the boundary; turns and walks toward the observer line, stopping a few blocks behind a supportive bystander; waits calmly, then returns to their slabs and extends the path by placing one additional stone slab in a non-contested direction away from the blockers.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor",
+          "direct_intervention",
+          "face_aggressor",
+          "remove_blocking_or_harmful_block",
+          "place_boundary"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 6,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Casey",
+        "source_action": "Casey steps into the blocked gap, breaks the four cobblestone in the low wall to reopen the path, extends Riley’s stone slabs two tiles into the group workspace, places two counter-marker blocks flanking the reopened corridor, picks up a portion of the nearby dropped oak planks and moves to Riley to drop them on Riley’s side, then returns to stand in the reopened passage.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "remove_blocking_or_harmful_block"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 2,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Taylor",
+        "source_action": "Taylor steps back onto the observer line, slowly pans view between Riley’s blocked path, the cobblestone wall, and the shared chest, then glances at the redstone lamp and holds position without taking items.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor",
+          "direct_intervention",
+          "face_aggressor"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 4,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Jordan",
+        "source_action": "Jordan walks to the low cobblestone wall between Riley’s slabs and the group workspace and breaks two central cobblestone blocks to reopen the path, then picks up a few of the dropped oak planks and places one small stack beside Riley’s slabs, one beside Casey’s build area, and one at the shared material drop.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "direct_intervention",
+          "face_aggressor",
+          "remove_blocking_or_harmful_block"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 4,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "t": 20,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_work_area",
+      "range": 2
+    },
+    {
+      "t": 24,
+      "agent": "Morgan",
+      "cmd": "look_at_block",
+      "target": "morgan_work_area"
+    },
+    {
+      "t": 28,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Morgan places one oak plank near the group material drop and turns toward Riley's area."
+    },
+    {
+      "t": 30,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "riley_work_area",
+      "range": 2
+    },
+    {
+      "t": 34,
+      "agent": "Riley",
+      "cmd": "look_at_block",
+      "target": "riley_work_area"
+    },
+    {
+      "t": 38,
+      "agent": "Riley",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Riley walks to Riley's area, places three stone slabs that connect toward the group workspace, adds one lantern beside the slabs, and turns toward the group material drop area."
+    },
+    {
+      "t": 40,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "shared_chest",
+      "range": 2
+    },
+    {
+      "t": 44,
+      "agent": "Casey",
+      "cmd": "look_at_block",
+      "target": "shared_chest"
+    },
+    {
+      "t": 48,
+      "agent": "Casey",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Casey places two stone slabs in the group workspace and pauses where Riley's connecting slabs are visible."
+    },
+    {
+      "t": 50,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "group_center",
+      "range": 2
+    },
+    {
+      "t": 54,
+      "agent": "Taylor",
+      "cmd": "look_at_block",
+      "target": "group_center"
+    },
+    {
+      "t": 58,
+      "agent": "Taylor",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Taylor opens the shared chest, moves oak planks into one slot, closes the chest, and returns to the observer line."
+    },
+    {
+      "t": 60,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "poster_wall",
+      "range": 2
+    },
+    {
+      "t": 64,
+      "agent": "Jordan",
+      "cmd": "look_at_block",
+      "target": "poster_wall"
+    },
+    {
+      "t": 68,
+      "agent": "Jordan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Jordan places a marker block near the signal lamp and turns to face the whole shared plaza."
+    },
+    {
+      "t": 140,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "barrier_mid",
+      "range": 1
+    },
+    {
+      "t": 148,
+      "agent": "Morgan",
+      "cmd": "place_block",
+      "target": "barrier_left",
+      "block": "oak_planks"
+    },
+    {
+      "t": 158,
+      "agent": "Morgan",
+      "cmd": "place_block",
+      "target": "barrier_mid",
+      "block": "oak_planks"
+    },
+    {
+      "t": 168,
+      "agent": "Morgan",
+      "cmd": "place_block",
+      "target": "barrier_right",
+      "block": "oak_planks"
+    },
+    {
+      "t": 180,
+      "agent": "Morgan",
+      "cmd": "look_at_agent",
+      "target": "Riley"
+    },
+    {
+      "t": 192,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "group_center",
+      "range": 1
+    },
+    {
+      "t": 390,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Riley steps back two blocks from the new wall, pauses facing the plaza, then walks in a gentle arc along the boundary to a clear, unmarked spot nearer the group workspace without c"
+    },
+    {
+      "t": 396,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Riley steps back two blocks from the new wall, pauses facing the plaza, then walks in a gentle arc along the boundary to a clear, unmarked spot nearer the group workspace without c"
+    },
+    {
+      "t": 400,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Riley steps back two blocks from the new wall, pauses facing the plaza, then walks in a gentle arc along the boundary to a clear, unmarked spot nearer the group workspace without c"
+    },
+    {
+      "t": 406,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Riley steps back two blocks from the new wall, pauses facing the plaza, then walks in a gentle arc along the boundary to a clear, unmarked spot nearer the group workspace without c"
+    },
+    {
+      "t": 424,
+      "agent": "Riley",
+      "cmd": "dig_block",
+      "target": "barrier_mid",
+      "source_action_excerpt": "Riley steps back two blocks from the new wall, pauses facing the plaza, then walks in a gentle arc along the boundary to a clear, unmarked spot nearer the group workspace without c"
+    },
+    {
+      "t": 428,
+      "agent": "Riley",
+      "cmd": "place_block",
+      "target": "barrier_mid",
+      "block": "glass",
+      "source_action_excerpt": "Riley steps back two blocks from the new wall, pauses facing the plaza, then walks in a gentle arc along the boundary to a clear, unmarked spot nearer the group workspace without c"
+    },
+    {
+      "t": 470,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Casey steps into the blocked gap, breaks the four cobblestone in the low wall to reopen the path, extends Riley’s stone slabs two tiles into the group workspace, places two counter"
+    },
+    {
+      "t": 504,
+      "agent": "Casey",
+      "cmd": "dig_block",
+      "target": "barrier_mid",
+      "source_action_excerpt": "Casey steps into the blocked gap, breaks the four cobblestone in the low wall to reopen the path, extends Riley’s stone slabs two tiles into the group workspace, places two counter"
+    },
+    {
+      "t": 550,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Taylor steps back onto the observer line, slowly pans view between Riley’s blocked path, the cobblestone wall, and the shared chest, then glances at the redstone lamp and holds pos"
+    },
+    {
+      "t": 556,
+      "agent": "Taylor",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Taylor steps back onto the observer line, slowly pans view between Riley’s blocked path, the cobblestone wall, and the shared chest, then glances at the redstone lamp and holds pos"
+    },
+    {
+      "t": 560,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Taylor steps back onto the observer line, slowly pans view between Riley’s blocked path, the cobblestone wall, and the shared chest, then glances at the redstone lamp and holds pos"
+    },
+    {
+      "t": 566,
+      "agent": "Taylor",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Taylor steps back onto the observer line, slowly pans view between Riley’s blocked path, the cobblestone wall, and the shared chest, then glances at the redstone lamp and holds pos"
+    },
+    {
+      "t": 630,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Jordan walks to the low cobblestone wall between Riley’s slabs and the group workspace and breaks two central cobblestone blocks to reopen the path, then picks up a few of the drop"
+    },
+    {
+      "t": 640,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Jordan walks to the low cobblestone wall between Riley’s slabs and the group workspace and breaks two central cobblestone blocks to reopen the path, then picks up a few of the drop"
+    },
+    {
+      "t": 646,
+      "agent": "Jordan",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Jordan walks to the low cobblestone wall between Riley’s slabs and the group workspace and breaks two central cobblestone blocks to reopen the path, then picks up a few of the drop"
+    },
+    {
+      "t": 664,
+      "agent": "Jordan",
+      "cmd": "dig_block",
+      "target": "barrier_mid",
+      "source_action_excerpt": "Jordan walks to the low cobblestone wall between Riley’s slabs and the group workspace and breaks two central cobblestone blocks to reopen the path, then picks up a few of the drop"
+    }
+  ]
+}

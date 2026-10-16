@@ -1,0 +1,609 @@
+{
+  "schema": "non_verbal_minecraft_replay_v2",
+  "source_json": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_shared_build_visible_object_disruption_v1\\batch_shared_build_area_gpt-5_realembed_no-relmem_20260813_172954\\runs\\20260813_172954_gpt-5_realembed_no-relmem_001.json",
+  "scenario_id": "mc_shared_build_visible_object_disruption_v1",
+  "scenario": "Minecraft Shared Build Area",
+  "run_id": "20260813_172954_gpt-5_realembed_no-relmem_001",
+  "agents": {
+    "Morgan": {
+      "role": "scripted_actor",
+      "spawn": {
+        "x": 8,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Riley": {
+      "role": "target",
+      "spawn": {
+        "x": -3,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 3,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Casey": {
+      "role": "observer",
+      "spawn": {
+        "x": -7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Taylor": {
+      "role": "observer",
+      "spawn": {
+        "x": 0,
+        "y": 64,
+        "z": -6
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Jordan": {
+      "role": "observer",
+      "spawn": {
+        "x": 7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    }
+  },
+  "world": {
+    "minecraft_version": "1.20.1",
+    "world_type": "flat",
+    "origin": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "bounds": {
+      "min": {
+        "x": -22,
+        "y": 63,
+        "z": -18
+      },
+      "max": {
+        "x": 22,
+        "y": 72,
+        "z": 18
+      }
+    },
+    "viewer": {
+      "agent": "Casey",
+      "port": 3000,
+      "firstPerson": false,
+      "viewDistance": 7
+    }
+  },
+  "markers": {
+    "group_center": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "riley_work_area": {
+      "x": -4,
+      "y": 64,
+      "z": 2
+    },
+    "riley_safe_area": {
+      "x": -8,
+      "y": 64,
+      "z": 4
+    },
+    "riley_spawn": {
+      "x": -3,
+      "y": 64,
+      "z": 1
+    },
+    "riley_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "morgan_work_area": {
+      "x": 5,
+      "y": 64,
+      "z": 2
+    },
+    "shared_chest": {
+      "x": 0,
+      "y": 64,
+      "z": 4
+    },
+    "chest_front": {
+      "x": 0,
+      "y": 64,
+      "z": 3
+    },
+    "poster_wall": {
+      "x": -5,
+      "y": 65,
+      "z": 5
+    },
+    "poster_cover": {
+      "x": -5,
+      "y": 65,
+      "z": 4
+    },
+    "barrier_left": {
+      "x": -2,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_mid": {
+      "x": -1,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_right": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "morgan_near_riley": {
+      "x": -2,
+      "y": 64,
+      "z": 2
+    },
+    "morgan_blocking_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "observer_intercept": {
+      "x": -1,
+      "y": 64,
+      "z": 2
+    },
+    "observer_support": {
+      "x": -5,
+      "y": 64,
+      "z": 2
+    },
+    "observer_report": {
+      "x": 3,
+      "y": 64,
+      "z": -6
+    },
+    "observer_withdraw": {
+      "x": 9,
+      "y": 64,
+      "z": -8
+    },
+    "mocking_signal_spot": {
+      "x": 1,
+      "y": 64,
+      "z": 2
+    },
+    "damaged_block_a": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_b": {
+      "x": -3,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_c": {
+      "x": -4,
+      "y": 65,
+      "z": 3
+    },
+    "replacement_block": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "spawn_trap_a": {
+      "x": -4,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_b": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_c": {
+      "x": -3,
+      "y": 64,
+      "z": 0
+    },
+    "spawn_trap_d": {
+      "x": -3,
+      "y": 64,
+      "z": 2
+    }
+  },
+  "initial_blocks": [
+    {
+      "marker": "shared_chest",
+      "block": "chest"
+    },
+    {
+      "marker": "poster_wall",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_a",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_b",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_c",
+      "block": "lantern"
+    },
+    {
+      "marker": "morgan_work_area",
+      "block": "stone"
+    }
+  ],
+  "stimulus": {
+    "setup": "Scenario: The players are in a superflat Minecraft shared build area. Chat is disabled. The group task is to build a small village center. Everyone can see the central table area, Riley's plot, Morgan's plot, the shared chest, and a redstone signal lamp near the far side of the build area.\nMap layout: {'world': 'superflat', 'shared_area': 'x=-8..8, z=-8..8', 'riley_plot': 'x=-4..0, z=0..4', 'morgan_plot': 'x=4..8, z=0..4', 'shared_chest': 'x=0, y=64, z=-4', 'signal_lamp': 'x=0, y=64, z=8', 'observer_line': 'x=-6,2,6, z=-2'}",
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan works at Morgan's plot, places two stone brick blocks along the village center edge, and turns briefly toward the shared chest.",
+      "Riley": "Riley walks to Riley's plot, places smooth stone blocks in a small circle, adds water in the center, and places flowers around the edge of the fountain. Riley steps back one block and looks from the fountain toward the other players.",
+      "Casey": "Casey walks along the plaza edge, places two stone slabs to connect the shared path, and stands where both Riley's plot and the center path remain visible.",
+      "Taylor": "Taylor opens the shared chest, sorts flowers and stone blocks into separate slots, closes the chest, and steps back to the observer line.",
+      "Jordan": "Jordan places two path marker blocks near the redstone signal lamp, checks the line of sight to the village center, and faces the group."
+    },
+    "target_action": "Riley walks to Riley's plot, places smooth stone blocks in a small circle, adds water in the center, and places flowers around the edge of the fountain. Riley steps back one block and looks from the fountain toward the other players.",
+    "scripted_visible_incident": "Morgan walks from Morgan's plot to Riley's plot. Morgan stands directly between Riley and the fountain. Morgan breaks two flower blocks that Riley placed. Morgan places three dirt blocks on top of the fountain edge. Morgan opens Riley's chest and removes several flower items. Morgan turns toward Taylor and crouches repeatedly twice. Morgan then stands on the center block of Riley's fountain."
+  },
+  "source_actions": {
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan works at Morgan's plot, places two stone brick blocks along the village center edge, and turns briefly toward the shared chest.",
+      "Riley": "Riley walks to Riley's plot, places smooth stone blocks in a small circle, adds water in the center, and places flowers around the edge of the fountain. Riley steps back one block and looks from the fountain toward the other players.",
+      "Casey": "Casey walks along the plaza edge, places two stone slabs to connect the shared path, and stands where both Riley's plot and the center path remain visible.",
+      "Taylor": "Taylor opens the shared chest, sorts flowers and stone blocks into separate slots, closes the chest, and steps back to the observer line.",
+      "Jordan": "Jordan places two path marker blocks near the redstone signal lamp, checks the line of sight to the village center, and faces the group."
+    },
+    "scripted_visible_incident": "Morgan walks from Morgan's plot to Riley's plot. Morgan stands directly between Riley and the fountain. Morgan breaks two flower blocks that Riley placed. Morgan places three dirt blocks on top of the fountain edge. Morgan opens Riley's chest and removes several flower items. Morgan turns toward Taylor and crouches repeatedly twice. Morgan then stands on the center block of Riley's fountain.",
+    "observer_actions": {
+      "Casey": "Casey sprints to Riley’s fountain, steps onto the rim to shoulder Morgan off the center block, breaks the three dirt blocks, replaces the broken flowers and water if disturbed, then places a slab boundary line along Riley’s plot edge and clears a two-block-wide access path from Riley’s plot to the fountain.\"",
+      "Taylor": "Taylor steps off the observer line, walks to the redstone signal lamp, toggles it on, waits a moment, then toggles it off once",
+      "Jordan": "Jordan walks calmly to Riley’s plot, breaks the three dirt blocks on the fountain edge, re-plants two flowers from the shared chest around the fountain, places a visible line of path marker blocks along Riley’s plot boundary, then moves to stand between Morgan and the fountain while facing the redstone signal lamp."
+    },
+    "target_reaction": "Riley steps back two blocks from the fountain, lowers their gaze toward the ground, slowly sidesteps toward the edge of the shared area, and walks to stand beside Taylor and Jordan on the observer line, pausing there while facing slightly toward their plot with the griefing in peripheral view."
+  },
+  "migration_report": {
+    "summary": {
+      "agents_mapped": 4,
+      "parseability_rate": 1.0,
+      "mean_primitive_coverage": 1.0,
+      "total_primitives": 15,
+      "unsupported_intent_count": 0
+    },
+    "per_agent": [
+      {
+        "agent": "Riley",
+        "source_action": "Riley steps back two blocks from the fountain, lowers their gaze toward the ground, slowly sidesteps toward the edge of the shared area, and walks to stand beside Taylor and Jordan on the observer line, pausing there while facing slightly toward their plot with the griefing in peripheral view.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 2,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Casey",
+        "source_action": "Casey sprints to Riley’s fountain, steps onto the rim to shoulder Morgan off the center block, breaks the three dirt blocks, replaces the broken flowers and water if disturbed, then places a slab boundary line along Riley’s plot edge and clears a two-block-wide access path from Riley’s plot to the fountain.\"",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "repair_or_restore",
+          "remove_blocking_or_harmful_block",
+          "place_boundary"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 4,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Taylor",
+        "source_action": "Taylor steps off the observer line, walks to the redstone signal lamp, toggles it on, waits a moment, then toggles it off once",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor",
+          "nonverbal_signal"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 3,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Jordan",
+        "source_action": "Jordan walks calmly to Riley’s plot, breaks the three dirt blocks on the fountain edge, re-plants two flowers from the shared chest around the fountain, places a visible line of path marker blocks along Riley’s plot boundary, then moves to stand between Morgan and the fountain while facing the redstone signal lamp.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "direct_intervention",
+          "face_aggressor",
+          "remove_blocking_or_harmful_block",
+          "place_boundary",
+          "nonverbal_signal"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 6,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "t": 20,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_work_area",
+      "range": 2
+    },
+    {
+      "t": 24,
+      "agent": "Morgan",
+      "cmd": "look_at_block",
+      "target": "morgan_work_area"
+    },
+    {
+      "t": 28,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Morgan works at Morgan's plot, places two stone brick blocks along the village center edge, and turns briefly toward the shared chest."
+    },
+    {
+      "t": 30,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "riley_work_area",
+      "range": 2
+    },
+    {
+      "t": 34,
+      "agent": "Riley",
+      "cmd": "look_at_block",
+      "target": "riley_work_area"
+    },
+    {
+      "t": 38,
+      "agent": "Riley",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Riley walks to Riley's plot, places smooth stone blocks in a small circle, adds water in the center, and places flowers around the edge of the fountain. Riley steps back one block and looks from the fountain toward the other players."
+    },
+    {
+      "t": 40,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "shared_chest",
+      "range": 2
+    },
+    {
+      "t": 44,
+      "agent": "Casey",
+      "cmd": "look_at_block",
+      "target": "shared_chest"
+    },
+    {
+      "t": 48,
+      "agent": "Casey",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Casey walks along the plaza edge, places two stone slabs to connect the shared path, and stands where both Riley's plot and the center path remain visible."
+    },
+    {
+      "t": 50,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "group_center",
+      "range": 2
+    },
+    {
+      "t": 54,
+      "agent": "Taylor",
+      "cmd": "look_at_block",
+      "target": "group_center"
+    },
+    {
+      "t": 58,
+      "agent": "Taylor",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Taylor opens the shared chest, sorts flowers and stone blocks into separate slots, closes the chest, and steps back to the observer line."
+    },
+    {
+      "t": 60,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "poster_wall",
+      "range": 2
+    },
+    {
+      "t": 64,
+      "agent": "Jordan",
+      "cmd": "look_at_block",
+      "target": "poster_wall"
+    },
+    {
+      "t": 68,
+      "agent": "Jordan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Jordan places two path marker blocks near the redstone signal lamp, checks the line of sight to the village center, and faces the group."
+    },
+    {
+      "t": 140,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_near_riley",
+      "range": 1
+    },
+    {
+      "t": 148,
+      "agent": "Morgan",
+      "cmd": "look_at_agent",
+      "target": "Riley"
+    },
+    {
+      "t": 156,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 2
+    },
+    {
+      "t": 168,
+      "agent": "Morgan",
+      "cmd": "dig_block",
+      "target": "damaged_block_a"
+    },
+    {
+      "t": 182,
+      "agent": "Morgan",
+      "cmd": "stand",
+      "ticks": 25
+    },
+    {
+      "t": 390,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Riley steps back two blocks from the fountain, lowers their gaze toward the ground, slowly sidesteps toward the edge of the shared area, and walks to stand beside Taylor and Jordan"
+    },
+    {
+      "t": 396,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Riley steps back two blocks from the fountain, lowers their gaze toward the ground, slowly sidesteps toward the edge of the shared area, and walks to stand beside Taylor and Jordan"
+    },
+    {
+      "t": 470,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Casey sprints to Riley’s fountain, steps onto the rim to shoulder Morgan off the center block, breaks the three dirt blocks, replaces the broken flowers and water if disturbed, the"
+    },
+    {
+      "t": 500,
+      "agent": "Casey",
+      "cmd": "place_block",
+      "target": "replacement_block",
+      "block": "oak_planks",
+      "source_action_excerpt": "Casey sprints to Riley’s fountain, steps onto the rim to shoulder Morgan off the center block, breaks the three dirt blocks, replaces the broken flowers and water if disturbed, the"
+    },
+    {
+      "t": 504,
+      "agent": "Casey",
+      "cmd": "dig_block",
+      "target": "barrier_mid",
+      "source_action_excerpt": "Casey sprints to Riley’s fountain, steps onto the rim to shoulder Morgan off the center block, breaks the three dirt blocks, replaces the broken flowers and water if disturbed, the"
+    },
+    {
+      "t": 508,
+      "agent": "Casey",
+      "cmd": "place_block",
+      "target": "barrier_mid",
+      "block": "glass",
+      "source_action_excerpt": "Casey sprints to Riley’s fountain, steps onto the rim to shoulder Morgan off the center block, breaks the three dirt blocks, replaces the broken flowers and water if disturbed, the"
+    },
+    {
+      "t": 550,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "group_center",
+      "range": 1,
+      "source_action_excerpt": "Taylor steps off the observer line, walks to the redstone signal lamp, toggles it on, waits a moment, then toggles it off once"
+    },
+    {
+      "t": 556,
+      "agent": "Taylor",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Taylor steps off the observer line, walks to the redstone signal lamp, toggles it on, waits a moment, then toggles it off once"
+    },
+    {
+      "t": 592,
+      "agent": "Taylor",
+      "cmd": "swing_arm",
+      "repeat": 2,
+      "source_action_excerpt": "Taylor steps off the observer line, walks to the redstone signal lamp, toggles it on, waits a moment, then toggles it off once"
+    },
+    {
+      "t": 630,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Jordan walks calmly to Riley’s plot, breaks the three dirt blocks on the fountain edge, re-plants two flowers from the shared chest around the fountain, places a visible line of pa"
+    },
+    {
+      "t": 640,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Jordan walks calmly to Riley’s plot, breaks the three dirt blocks on the fountain edge, re-plants two flowers from the shared chest around the fountain, places a visible line of pa"
+    },
+    {
+      "t": 646,
+      "agent": "Jordan",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Jordan walks calmly to Riley’s plot, breaks the three dirt blocks on the fountain edge, re-plants two flowers from the shared chest around the fountain, places a visible line of pa"
+    },
+    {
+      "t": 664,
+      "agent": "Jordan",
+      "cmd": "dig_block",
+      "target": "chest_front",
+      "source_action_excerpt": "Jordan walks calmly to Riley’s plot, breaks the three dirt blocks on the fountain edge, re-plants two flowers from the shared chest around the fountain, places a visible line of pa"
+    },
+    {
+      "t": 668,
+      "agent": "Jordan",
+      "cmd": "place_block",
+      "target": "barrier_mid",
+      "block": "glass",
+      "source_action_excerpt": "Jordan walks calmly to Riley’s plot, breaks the three dirt blocks on the fountain edge, re-plants two flowers from the shared chest around the fountain, places a visible line of pa"
+    },
+    {
+      "t": 672,
+      "agent": "Jordan",
+      "cmd": "swing_arm",
+      "repeat": 2,
+      "source_action_excerpt": "Jordan walks calmly to Riley’s plot, breaks the three dirt blocks on the fountain edge, re-plants two flowers from the shared chest around the fountain, places a visible line of pa"
+    }
+  ]
+}

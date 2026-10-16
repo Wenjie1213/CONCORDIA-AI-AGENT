@@ -23,3 +23,19 @@ __pycache__/
 
 # Test cache
 .pytest_cache
+
+# Node.js dependencies.
+node_modules/
+
+# Local Minecraft server runtime files.
+/mineflayer_replay/libraries/
+/mineflayer_replay/logs/
+/mineflayer_replay/versions/
+/mineflayer_replay/world/
+/mineflayer_replay/server.jar
+/mineflayer_replay/eula.txt
+/mineflayer_replay/banned-ips.json
+/mineflayer_replay/banned-players.json
+/mineflayer_replay/ops.json
+/mineflayer_replay/usercache.json
+/mineflayer_replay/whitelist.json

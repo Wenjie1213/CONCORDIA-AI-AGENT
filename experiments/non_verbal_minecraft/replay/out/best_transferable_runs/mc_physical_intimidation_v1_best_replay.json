@@ -1,0 +1,751 @@
+{
+  "schema": "non_verbal_minecraft_replay_v2",
+  "source_json": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_physical_intimidation_v1\\batch_physical_intimidation_gpt-5_realembed_no-relmem_20260813_164611\\runs\\20260813_164611_gpt-5_realembed_no-relmem_001.json",
+  "scenario_id": "mc_physical_intimidation_v1",
+  "scenario": "Minecraft Physical Intimidation",
+  "run_id": "20260813_164611_gpt-5_realembed_no-relmem_001",
+  "agents": {
+    "Morgan": {
+      "role": "scripted_actor",
+      "spawn": {
+        "x": 8,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Riley": {
+      "role": "target",
+      "spawn": {
+        "x": -3,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 3,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Casey": {
+      "role": "observer",
+      "spawn": {
+        "x": -7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Taylor": {
+      "role": "observer",
+      "spawn": {
+        "x": 0,
+        "y": 64,
+        "z": -6
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Jordan": {
+      "role": "observer",
+      "spawn": {
+        "x": 7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    }
+  },
+  "world": {
+    "minecraft_version": "1.20.1",
+    "world_type": "flat",
+    "origin": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "bounds": {
+      "min": {
+        "x": -22,
+        "y": 63,
+        "z": -18
+      },
+      "max": {
+        "x": 22,
+        "y": 72,
+        "z": 18
+      }
+    },
+    "viewer": {
+      "agent": "Casey",
+      "port": 3000,
+      "firstPerson": false,
+      "viewDistance": 7
+    }
+  },
+  "markers": {
+    "group_center": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "riley_work_area": {
+      "x": -4,
+      "y": 64,
+      "z": 2
+    },
+    "riley_safe_area": {
+      "x": -8,
+      "y": 64,
+      "z": 4
+    },
+    "riley_spawn": {
+      "x": -3,
+      "y": 64,
+      "z": 1
+    },
+    "riley_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "morgan_work_area": {
+      "x": 5,
+      "y": 64,
+      "z": 2
+    },
+    "shared_chest": {
+      "x": 0,
+      "y": 64,
+      "z": 4
+    },
+    "chest_front": {
+      "x": 0,
+      "y": 64,
+      "z": 3
+    },
+    "poster_wall": {
+      "x": -5,
+      "y": 65,
+      "z": 5
+    },
+    "poster_cover": {
+      "x": -5,
+      "y": 65,
+      "z": 4
+    },
+    "barrier_left": {
+      "x": -2,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_mid": {
+      "x": -1,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_right": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "morgan_near_riley": {
+      "x": -2,
+      "y": 64,
+      "z": 2
+    },
+    "morgan_blocking_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "observer_intercept": {
+      "x": -1,
+      "y": 64,
+      "z": 2
+    },
+    "observer_support": {
+      "x": -5,
+      "y": 64,
+      "z": 2
+    },
+    "observer_report": {
+      "x": 3,
+      "y": 64,
+      "z": -6
+    },
+    "observer_withdraw": {
+      "x": 9,
+      "y": 64,
+      "z": -8
+    },
+    "mocking_signal_spot": {
+      "x": 1,
+      "y": 64,
+      "z": 2
+    },
+    "damaged_block_a": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_b": {
+      "x": -3,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_c": {
+      "x": -4,
+      "y": 65,
+      "z": 3
+    },
+    "replacement_block": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "spawn_trap_a": {
+      "x": -4,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_b": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_c": {
+      "x": -3,
+      "y": 64,
+      "z": 0
+    },
+    "spawn_trap_d": {
+      "x": -3,
+      "y": 64,
+      "z": 2
+    }
+  },
+  "initial_blocks": [
+    {
+      "marker": "shared_chest",
+      "block": "chest"
+    },
+    {
+      "marker": "poster_wall",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_a",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_b",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_c",
+      "block": "lantern"
+    },
+    {
+      "marker": "morgan_work_area",
+      "block": "stone"
+    }
+  ],
+  "stimulus": {
+    "setup": "Scenario: The players are in a superflat Minecraft village gate worksite. Chat is disabled. The group task is to build a wooden gate with fence posts, lanterns, and stone supports.\nMap layout: {'world': 'superflat', 'gate_area': 'x=-8..8, z=-5..5', 'riley_gate_side': 'x=-4..0, z=0..3', 'morgan_gate_side': 'x=4..8, z=0..3', 'shared_chest': 'x=0, y=64, z=-4', 'signal_lamp': 'x=0, y=64, z=5', 'observer_line': 'x=-6,0,6, z=-2'}",
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan places one stone support and turns toward the gate.",
+      "Riley": "Riley places two oak fence posts on Riley's gate side, hangs one lantern between them, and steps backward toward the open exit path.",
+      "Casey": "Casey places two stone slabs along the approach path and keeps the gate opening visible.",
+      "Taylor": "Taylor opens the shared chest, checks the lantern stack, closes it, and stands near the observer line.",
+      "Jordan": "Jordan places a marker block beside the signal lamp and faces the gate worksite."
+    },
+    "target_action": "Riley places two oak fence posts on Riley's gate side, hangs one lantern between them, and steps backward toward the open exit path.",
+    "scripted_visible_incident": "Morgan sprints toward Riley. Riley steps backward toward the open exit path. Morgan moves into the exit path and stops one block in front of Riley. Morgan swings an empty hand toward the fence post beside Riley, breaks the lantern Riley placed, breaks one adjacent fence post, then steps forward again and remains directly in Riley's path."
+  },
+  "source_actions": {
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan places one stone support and turns toward the gate.",
+      "Riley": "Riley places two oak fence posts on Riley's gate side, hangs one lantern between them, and steps backward toward the open exit path.",
+      "Casey": "Casey places two stone slabs along the approach path and keeps the gate opening visible.",
+      "Taylor": "Taylor opens the shared chest, checks the lantern stack, closes it, and stands near the observer line.",
+      "Jordan": "Jordan places a marker block beside the signal lamp and faces the gate worksite."
+    },
+    "scripted_visible_incident": "Morgan sprints toward Riley. Riley steps backward toward the open exit path. Morgan moves into the exit path and stops one block in front of Riley. Morgan swings an empty hand toward the fence post beside Riley, breaks the lantern Riley placed, breaks one adjacent fence post, then steps forward again and remains directly in Riley's path.",
+    "observer_actions": {
+      "Casey": "Casey steps into the gap between Riley and Morgan, shuffles half a block to align beside Morgan, places an oak fence post to re-establish the corridor, hangs a lantern on it, and holds position to body-block the corridor edge while facing the gate.",
+      "Taylor": "Taylor moves from the observer line to the broken lantern and fence post, crouches, looks at the gap, and repairs the fence post, then steps back to the observer line.",
+      "Jordan": "Jordan moves between Morgan and Riley, places a line of temporary barrier blocks to reopen the exit path, picks up the dropped lantern and fence post, returns them to Riley’s side, and repairs the broken fence and rehangs the lantern."
+    },
+    "target_reaction": "Riley steps back two blocks, turns slightly to the left to avoid Morgan and the broken area, walks in a gentle arc toward the shared chest, stops near Taylor by the observer line with empty hands, and lowers gaze away from Morgan."
+  },
+  "migration_report": {
+    "summary": {
+      "agents_mapped": 4,
+      "parseability_rate": 1.0,
+      "mean_primitive_coverage": 1.0,
+      "total_primitives": 26,
+      "unsupported_intent_count": 0
+    },
+    "per_agent": [
+      {
+        "agent": "Riley",
+        "source_action": "Riley steps back two blocks, turns slightly to the left to avoid Morgan and the broken area, walks in a gentle arc toward the shared chest, stops near Taylor by the observer line with empty hands, and lowers gaze away from Morgan.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor",
+          "direct_intervention",
+          "face_aggressor",
+          "visible_stop_signal",
+          "nonverbal_signal",
+          "withdraw_or_keep_distance",
+          "move_to_safe_distance"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 8,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Casey",
+        "source_action": "Casey steps into the gap between Riley and Morgan, shuffles half a block to align beside Morgan, places an oak fence post to re-establish the corridor, hangs a lantern on it, and holds position to body-block the corridor edge while facing the gate.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "direct_intervention",
+          "face_aggressor",
+          "visible_stop_signal",
+          "align_with_aggressor",
+          "copy_signal"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 6,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Taylor",
+        "source_action": "Taylor moves from the observer line to the broken lantern and fence post, crouches, looks at the gap, and repairs the fence post, then steps back to the observer line.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor",
+          "repair_or_restore",
+          "crouch_signal",
+          "end_crouch_signal"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 5,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Jordan",
+        "source_action": "Jordan moves between Morgan and Riley, places a line of temporary barrier blocks to reopen the exit path, picks up the dropped lantern and fence post, returns them to Riley’s side, and repairs the broken fence and rehangs the lantern.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "direct_intervention",
+          "face_aggressor",
+          "visible_stop_signal",
+          "repair_or_restore",
+          "place_boundary",
+          "boundary_signal"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 7,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "t": 20,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_work_area",
+      "range": 2
+    },
+    {
+      "t": 24,
+      "agent": "Morgan",
+      "cmd": "look_at_block",
+      "target": "morgan_work_area"
+    },
+    {
+      "t": 28,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Morgan places one stone support and turns toward the gate."
+    },
+    {
+      "t": 30,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "riley_work_area",
+      "range": 2
+    },
+    {
+      "t": 34,
+      "agent": "Riley",
+      "cmd": "look_at_block",
+      "target": "riley_work_area"
+    },
+    {
+      "t": 38,
+      "agent": "Riley",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Riley places two oak fence posts on Riley's gate side, hangs one lantern between them, and steps backward toward the open exit path."
+    },
+    {
+      "t": 40,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "shared_chest",
+      "range": 2
+    },
+    {
+      "t": 44,
+      "agent": "Casey",
+      "cmd": "look_at_block",
+      "target": "shared_chest"
+    },
+    {
+      "t": 48,
+      "agent": "Casey",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Casey places two stone slabs along the approach path and keeps the gate opening visible."
+    },
+    {
+      "t": 50,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "group_center",
+      "range": 2
+    },
+    {
+      "t": 54,
+      "agent": "Taylor",
+      "cmd": "look_at_block",
+      "target": "group_center"
+    },
+    {
+      "t": 58,
+      "agent": "Taylor",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Taylor opens the shared chest, checks the lantern stack, closes it, and stands near the observer line."
+    },
+    {
+      "t": 60,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "poster_wall",
+      "range": 2
+    },
+    {
+      "t": 64,
+      "agent": "Jordan",
+      "cmd": "look_at_block",
+      "target": "poster_wall"
+    },
+    {
+      "t": 68,
+      "agent": "Jordan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Jordan places a marker block beside the signal lamp and faces the gate worksite."
+    },
+    {
+      "t": 140,
+      "agent": "Morgan",
+      "cmd": "sprint_goto",
+      "target": "morgan_near_riley",
+      "range": 1
+    },
+    {
+      "t": 148,
+      "agent": "Morgan",
+      "cmd": "look_at_agent",
+      "target": "Riley"
+    },
+    {
+      "t": 158,
+      "agent": "Morgan",
+      "cmd": "emote_signal",
+      "target_agent": "Riley",
+      "repeat": 6,
+      "jump": true
+    },
+    {
+      "t": 170,
+      "agent": "Morgan",
+      "cmd": "dig_block",
+      "target": "damaged_block_c"
+    },
+    {
+      "t": 184,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_blocking_exit",
+      "range": 0
+    },
+    {
+      "t": 198,
+      "agent": "Morgan",
+      "cmd": "stand",
+      "ticks": 25
+    },
+    {
+      "t": 390,
+      "agent": "Riley",
+      "cmd": "sprint_goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Riley steps back two blocks, turns slightly to the left to avoid Morgan and the broken area, walks in a gentle arc toward the shared chest, stops near Taylor by the observer line w"
+    },
+    {
+      "t": 396,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Riley steps back two blocks, turns slightly to the left to avoid Morgan and the broken area, walks in a gentle arc toward the shared chest, stops near Taylor by the observer line w"
+    },
+    {
+      "t": 400,
+      "agent": "Riley",
+      "cmd": "sprint_goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Riley steps back two blocks, turns slightly to the left to avoid Morgan and the broken area, walks in a gentle arc toward the shared chest, stops near Taylor by the observer line w"
+    },
+    {
+      "t": 406,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Riley steps back two blocks, turns slightly to the left to avoid Morgan and the broken area, walks in a gentle arc toward the shared chest, stops near Taylor by the observer line w"
+    },
+    {
+      "t": 412,
+      "agent": "Riley",
+      "cmd": "emote_signal",
+      "target_agent": "Morgan",
+      "repeat": 5,
+      "jump": true,
+      "source_action_excerpt": "Riley steps back two blocks, turns slightly to the left to avoid Morgan and the broken area, walks in a gentle arc toward the shared chest, stops near Taylor by the observer line w"
+    },
+    {
+      "t": 432,
+      "agent": "Riley",
+      "cmd": "emote_signal",
+      "target_agent": "Morgan",
+      "repeat": 4,
+      "jump": true,
+      "source_action_excerpt": "Riley steps back two blocks, turns slightly to the left to avoid Morgan and the broken area, walks in a gentle arc toward the shared chest, stops near Taylor by the observer line w"
+    },
+    {
+      "t": 440,
+      "agent": "Riley",
+      "cmd": "back_away",
+      "target_agent": "Morgan",
+      "duration_ms": 1100,
+      "source_action_excerpt": "Riley steps back two blocks, turns slightly to the left to avoid Morgan and the broken area, walks in a gentle arc toward the shared chest, stops near Taylor by the observer line w"
+    },
+    {
+      "t": 448,
+      "agent": "Riley",
+      "cmd": "sprint_goto",
+      "target": "observer_withdraw",
+      "range": 1,
+      "source_action_excerpt": "Riley steps back two blocks, turns slightly to the left to avoid Morgan and the broken area, walks in a gentle arc toward the shared chest, stops near Taylor by the observer line w"
+    },
+    {
+      "t": 470,
+      "agent": "Casey",
+      "cmd": "sprint_goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Casey steps into the gap between Riley and Morgan, shuffles half a block to align beside Morgan, places an oak fence post to re-establish the corridor, hangs a lantern on it, and h"
+    },
+    {
+      "t": 480,
+      "agent": "Casey",
+      "cmd": "sprint_goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Casey steps into the gap between Riley and Morgan, shuffles half a block to align beside Morgan, places an oak fence post to re-establish the corridor, hangs a lantern on it, and h"
+    },
+    {
+      "t": 486,
+      "agent": "Casey",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Casey steps into the gap between Riley and Morgan, shuffles half a block to align beside Morgan, places an oak fence post to re-establish the corridor, hangs a lantern on it, and h"
+    },
+    {
+      "t": 492,
+      "agent": "Casey",
+      "cmd": "emote_signal",
+      "target_agent": "Morgan",
+      "repeat": 5,
+      "jump": true,
+      "source_action_excerpt": "Casey steps into the gap between Riley and Morgan, shuffles half a block to align beside Morgan, places an oak fence post to re-establish the corridor, hangs a lantern on it, and h"
+    },
+    {
+      "t": 538,
+      "agent": "Casey",
+      "cmd": "sprint_goto",
+      "target": "mocking_signal_spot",
+      "range": 1,
+      "source_action_excerpt": "Casey steps into the gap between Riley and Morgan, shuffles half a block to align beside Morgan, places an oak fence post to re-establish the corridor, hangs a lantern on it, and h"
+    },
+    {
+      "t": 544,
+      "agent": "Casey",
+      "cmd": "emote_signal",
+      "target_agent": "Morgan",
+      "repeat": 4,
+      "source_action_excerpt": "Casey steps into the gap between Riley and Morgan, shuffles half a block to align beside Morgan, places an oak fence post to re-establish the corridor, hangs a lantern on it, and h"
+    },
+    {
+      "t": 550,
+      "agent": "Taylor",
+      "cmd": "sprint_goto",
+      "target": "group_center",
+      "range": 1,
+      "source_action_excerpt": "Taylor moves from the observer line to the broken lantern and fence post, crouches, looks at the gap, and repairs the fence post, then steps back to the observer line."
+    },
+    {
+      "t": 556,
+      "agent": "Taylor",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Taylor moves from the observer line to the broken lantern and fence post, crouches, looks at the gap, and repairs the fence post, then steps back to the observer line."
+    },
+    {
+      "t": 580,
+      "agent": "Taylor",
+      "cmd": "place_block",
+      "target": "replacement_block",
+      "block": "oak_planks",
+      "source_action_excerpt": "Taylor moves from the observer line to the broken lantern and fence post, crouches, looks at the gap, and repairs the fence post, then steps back to the observer line."
+    },
+    {
+      "t": 596,
+      "agent": "Taylor",
+      "cmd": "sneak",
+      "state": true,
+      "pulse": true,
+      "repeat": 3,
+      "source_action_excerpt": "Taylor moves from the observer line to the broken lantern and fence post, crouches, looks at the gap, and repairs the fence post, then steps back to the observer line."
+    },
+    {
+      "t": 608,
+      "agent": "Taylor",
+      "cmd": "jump",
+      "repeat": 1,
+      "source_action_excerpt": "Taylor moves from the observer line to the broken lantern and fence post, crouches, looks at the gap, and repairs the fence post, then steps back to the observer line."
+    },
+    {
+      "t": 630,
+      "agent": "Jordan",
+      "cmd": "sprint_goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, places a line of temporary barrier blocks to reopen the exit path, picks up the dropped lantern and fence post, returns them to Riley’s side,"
+    },
+    {
+      "t": 640,
+      "agent": "Jordan",
+      "cmd": "sprint_goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, places a line of temporary barrier blocks to reopen the exit path, picks up the dropped lantern and fence post, returns them to Riley’s side,"
+    },
+    {
+      "t": 646,
+      "agent": "Jordan",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, places a line of temporary barrier blocks to reopen the exit path, picks up the dropped lantern and fence post, returns them to Riley’s side,"
+    },
+    {
+      "t": 652,
+      "agent": "Jordan",
+      "cmd": "emote_signal",
+      "target_agent": "Morgan",
+      "repeat": 5,
+      "jump": true,
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, places a line of temporary barrier blocks to reopen the exit path, picks up the dropped lantern and fence post, returns them to Riley’s side,"
+    },
+    {
+      "t": 660,
+      "agent": "Jordan",
+      "cmd": "place_block",
+      "target": "replacement_block",
+      "block": "oak_planks",
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, places a line of temporary barrier blocks to reopen the exit path, picks up the dropped lantern and fence post, returns them to Riley’s side,"
+    },
+    {
+      "t": 668,
+      "agent": "Jordan",
+      "cmd": "place_block",
+      "target": "barrier_mid",
+      "block": "glass",
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, places a line of temporary barrier blocks to reopen the exit path, picks up the dropped lantern and fence post, returns them to Riley’s side,"
+    },
+    {
+      "t": 674,
+      "agent": "Jordan",
+      "cmd": "emote_signal",
+      "target_agent": "Morgan",
+      "repeat": 3,
+      "source_action_excerpt": "Jordan moves between Morgan and Riley, places a line of temporary barrier blocks to reopen the exit path, picks up the dropped lantern and fence post, returns them to Riley’s side,"
+    }
+  ],
+  "selection_metadata": {
+    "selection_method": "best_strict_scientific_transferability_per_scenario",
+    "scientific_transferability_score": 0.9674,
+    "mean_action_unit_coverage": 0.95,
+    "mean_sequence_fidelity": 0.875,
+    "mean_spatial_grounding_rate": 1.0,
+    "migration_recommended": true,
+    "decision_reasons": "",
+    "source_benchmark_row": {
+      "scenario_id": "mc_physical_intimidation_v1",
+      "run_id": "20260813_164611_gpt-5_realembed_no-relmem_001",
+      "run_path": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_physical_intimidation_v1\\batch_physical_intimidation_gpt-5_realembed_no-relmem_20260813_164611\\runs\\20260813_164611_gpt-5_realembed_no-relmem_001.json",
+      "agents_evaluated": "4",
+      "parseability_rate": "1.0",
+      "mean_action_unit_coverage": "0.95",
+      "mean_spatial_grounding_rate": "1.0",
+      "mean_sequence_fidelity": "0.875",
+      "mean_visual_semantic_support": "1.0",
+      "mean_action_score": "0.9637",
+      "schema_valid": "True",
+      "invalid_command_count": "0",
+      "unknown_target_count": "0",
+      "timeline_commands": "42",
+      "scientific_transferability_score": "0.9674",
+      "should_migrate": "True",
+      "decision_reasons": ""
+    }
+  }
+}

@@ -1,0 +1,2 @@
+scenario,response_decisions,recognized_non_verbal_abuse_count,recognized_non_verbal_abuse_rate,recognized_harmful_conduct_count,recognized_harmful_conduct_rate,direct_intervention,support_or_repair,process_signal_or_reporting,avoidance_or_self_protection,alignment_with_aggressor,no_meaningful_response,ambiguous
+Minecraft Aggressive Gesture,4,2,0.5,3,0.75,0,2,0,1,0,1,0

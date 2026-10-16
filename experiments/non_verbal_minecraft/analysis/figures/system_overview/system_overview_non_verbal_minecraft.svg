@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1050" viewBox="0 0 1800 1050" role="img" aria-labelledby="title desc">
+
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#475467" />
+  </marker>
+  <style>
+    .title { font: 700 28px Arial, Helvetica, sans-serif; fill: #111827; }
+    .subtitle { font: 400 16px Arial, Helvetica, sans-serif; fill: #475467; }
+    .box-title { font: 700 18px Arial, Helvetica, sans-serif; fill: #111827; }
+    .box-body { font: 400 14.5px Arial, Helvetica, sans-serif; fill: #475467; }
+    .small { font: 400 12px Arial, Helvetica, sans-serif; fill: #475467; }
+    .step-num { font: 700 12px Arial, Helvetica, sans-serif; fill: #111827; }
+    .arrow-label { font: 400 12.5px Arial, Helvetica, sans-serif; fill: #475467; }
+  </style>
+</defs>
+<title id="title">System overview of the Minecraft-like non-verbal abuse multi-agent simulator</title>
+<desc id="desc">Architecture diagram showing scenario design, fixed personas, Concordia simulation, structured JSON logs, rule-based and LLM benchmarks, analysis outputs, and Mineflayer prismarine-viewer replay.</desc>
+<rect width="1800" height="1050" fill="white"/>
+<text x="40" y="58" class="title">System Overview: Minecraft-like Non-verbal Abuse Multi-agent Simulator</text>
+<text x="40" y="88" class="subtitle">Concordia-based scenario execution, structured trace generation, benchmark evaluation, and Mineflayer/prismarine-viewer replay</text>
+<rect x="55" y="130" width="390" height="180" rx="10" ry="10" fill="#EAF2FF" stroke="#344054" stroke-width="1.8"/>
+<text x="73" y="162" class="box-title" font-size="18">Scenario And Map Design</text>
+<text x="73" y="196" class="box-body" font-size="14.5">
+<tspan x="73" dy="0">configs/scenario_registry.py</tspan>
+<tspan x="73" dy="20">14 Minecraft-like scenarios</tspan>
+<tspan x="73" dy="20">neutral setup, normal tasks,</tspan>
+<tspan x="73" dy="20">scripted visible incident</tspan>
+<tspan x="73" dy="20">abuse label hidden from agents</tspan>
+</text>
+<rect x="55" y="360" width="390" height="165" rx="10" ry="10" fill="#EAF2FF" stroke="#344054" stroke-width="1.8"/>
+<text x="73" y="392" class="box-title" font-size="18">Fixed Agent Personas</text>
+<text x="73" y="426" class="box-body" font-size="14.5">
+<tspan x="73" dy="0">personas/agents.py</tspan>
+<tspan x="73" dy="20">Morgan: scripted actor</tspan>
+<tspan x="73" dy="20">Riley: target</tspan>
+<tspan x="73" dy="20">Casey, Taylor, Jordan: observers</tspan>
+<tspan x="73" dy="20">relationship memories disabled</tspan>
+</text>
+<rect x="55" y="575" width="390" height="145" rx="10" ry="10" fill="#EAF2FF" stroke="#344054" stroke-width="1.8"/>
+<text x="73" y="607" class="box-title" font-size="18">Model And Runtime Settings</text>
+<text x="73" y="641" class="box-body" font-size="14.5">
+<tspan x="73" dy="0">OpenAI GPT-5 through Concordia model</tspan>
+<tspan x="73" dy="20">wrapper</tspan>
+<tspan x="73" dy="20">real or dummy embedder</tspan>
+<tspan x="73" dy="20">run_all.py / batch_run.py</tspan>
+</text>
+<rect x="505" y="150" width="450" height="250" rx="10" ry="10" fill="#EEF8F0" stroke="#344054" stroke-width="1.8"/>
+<text x="523" y="182" class="box-title" font-size="19">Concordia Simulation Core</text>
+<text x="523" y="216" class="box-body" font-size="14.5">
+<tspan x="523" dy="0">Game master constructs the scene and visible</tspan>
+<tspan x="523" dy="20">observations.</tspan>
+<tspan x="523" dy="20">Experimental protocol: setup -&gt; normal</tspan>
+<tspan x="523" dy="20">cooperative tasks -&gt; Morgan incident -&gt;</tspan>
+<tspan x="523" dy="20">observers and target act -&gt; structured log.</tspan>
+</text>
+<rect x="515" y="435" width="205" height="150" rx="10" ry="10" fill="#FDF2F2" stroke="#344054" stroke-width="1.8"/>
+<text x="533" y="467" class="box-title" font-size="18">Scripted Actor</text>
+<text x="533" y="501" class="box-body" font-size="14.5">
+<tspan x="533" dy="0">Morgan performs the</tspan>
+<tspan x="533" dy="20">scenario-specific non-</tspan>
+<tspan x="533" dy="20">verbal incident.</tspan>
+</text>
+<rect x="740" y="435" width="205" height="150" rx="10" ry="10" fill="#ECFDF3" stroke="#344054" stroke-width="1.8"/>
+<text x="758" y="467" class="box-title" font-size="18">LLM Agents</text>
+<text x="758" y="501" class="box-body" font-size="14.5">
+<tspan x="758" dy="0">Riley reacts as target.</tspan>
+<tspan x="758" dy="20">Casey, Taylor, Jordan</tspan>
+<tspan x="758" dy="20">observe and respond.</tspan>
+</text>
+<rect x="1010" y="205" width="360" height="215" rx="10" ry="10" fill="#FFF6E6" stroke="#344054" stroke-width="1.8"/>
+<text x="1028" y="237" class="box-title" font-size="19">Structured Run Logs</text>
+<text x="1028" y="271" class="box-body" font-size="14.5">
+<tspan x="1028" dy="0">Result_run_20x_by_scenario</tspan>
+<tspan x="1028" dy="20">14 scenarios x 20 runs = 280 JSON</tspan>
+<tspan x="1028" dy="20">logs</tspan>
+<tspan x="1028" dy="20">fields: stimulus, raw_log,</tspan>
+<tspan x="1028" dy="20">observer_actions, target_reaction,</tspan>
+<tspan x="1028" dy="20">benchmark</tspan>
+</text>
+<rect x="1010" y="515" width="360" height="170" rx="10" ry="10" fill="#F2ECFA" stroke="#344054" stroke-width="1.8"/>
+<text x="1028" y="547" class="box-title" font-size="18">Rule-based Benchmark</text>
+<text x="1028" y="581" class="box-body" font-size="14.5">
+<tspan x="1028" dy="0">scenario_codebook.py defines</tspan>
+<tspan x="1028" dy="20">expected target, source, abuse</tspan>
+<tspan x="1028" dy="20">category, visible cues, and valid</tspan>
+<tspan x="1028" dy="20">response types.</tspan>
+<tspan x="1028" dy="20">scenario_benchmark.py scores</tspan>
+<tspan x="1028" dy="20">recognition and effective action.</tspan>
+</text>
+<rect x="1010" y="720" width="360" height="150" rx="10" ry="10" fill="#F2ECFA" stroke="#344054" stroke-width="1.8"/>
+<text x="1028" y="752" class="box-title" font-size="18">LLM Judge Benchmark</text>
+<text x="1028" y="786" class="box-body" font-size="14.5">
+<tspan x="1028" dy="0">llm_judge.py evaluates each</tspan>
+<tspan x="1028" dy="20">participant response using a</tspan>
+<tspan x="1028" dy="20">codebook-aligned rubric and optional</tspan>
+<tspan x="1028" dy="20">internal trace.</tspan>
+</text>
+<rect x="1435" y="720" width="320" height="150" rx="10" ry="10" fill="#F4F4F4" stroke="#344054" stroke-width="1.8"/>
+<text x="1453" y="752" class="box-title" font-size="18">Analysis Outputs</text>
+<text x="1453" y="786" class="box-body" font-size="14.5">
+<tspan x="1453" dy="0">non_verbal_abuse_benchmark_analysis.ipynb</tspan>
+<tspan x="1453" dy="20">CSV/JSON summaries and thesis</tspan>
+<tspan x="1453" dy="20">figures: per-scenario, per-</tspan>
+<tspan x="1453" dy="20">agent, overall rates</tspan>
+</text>
+<rect x="1435" y="130" width="320" height="130" rx="10" ry="10" fill="#EAF7F7" stroke="#344054" stroke-width="1.8"/>
+<text x="1453" y="162" class="box-title" font-size="18">Replay Compilation</text>
+<text x="1453" y="196" class="box-body" font-size="14.5">
+<tspan x="1453" dy="0">compile_replay.py</tspan>
+<tspan x="1453" dy="20">compile_best_transferable_replays.py</tspan>
+<tspan x="1453" dy="20">compile_scenario_playback.py</tspan>
+</text>
+<rect x="1435" y="300" width="320" height="170" rx="10" ry="10" fill="#EAF7F7" stroke="#344054" stroke-width="1.8"/>
+<text x="1453" y="332" class="box-title" font-size="18">Mineflayer Viewer Replay</text>
+<text x="1453" y="366" class="box-body" font-size="14.5">
+<tspan x="1453" dy="0">mineflayer_replay</tspan>
+<tspan x="1453" dy="20">best_run_runner.js /</tspan>
+<tspan x="1453" dy="20">scenario_runner.js /</tspan>
+<tspan x="1453" dy="20">replay_runner.js</tspan>
+<tspan x="1453" dy="20">local Minecraft server +</tspan>
+<tspan x="1453" dy="20">prismarine-viewer</tspan>
+</text>
+<rect x="1435" y="515" width="320" height="150" rx="10" ry="10" fill="#EAF7F7" stroke="#344054" stroke-width="1.8"/>
+<text x="1453" y="547" class="box-title" font-size="18">Transferability Check</text>
+<text x="1453" y="581" class="box-body" font-size="14.5">
+<tspan x="1453" dy="0">migration_benchmark.py</tspan>
+<tspan x="1453" dy="20">scientific_migration_benchmark.py</tspan>
+<tspan x="1453" dy="20">action primitive coverage and</tspan>
+<tspan x="1453" dy="20">replay suitability</tspan>
+</text>
+<rect x="55" y="805" width="890" height="155" rx="10" ry="10" fill="#F4F4F4" stroke="#344054" stroke-width="1.8"/>
+<text x="73" y="837" class="box-title" font-size="19">Research Artefacts</text>
+<text x="73" y="871" class="box-body" font-size="14.5">
+<tspan x="73" dy="0">Synthetic non-verbal abuse interaction traces; benchmark rates for recognition and</tspan>
+<tspan x="73" dy="20">behavioural response; analysis figures for the dissertation; optional Minecraft viewer</tspan>
+<tspan x="73" dy="20">demonstrations.</tspan>
+</text>
+<path d="M 445 220 L 505 235" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 445 442 L 505 275" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 445 648 L 505 315" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 618 435 L 650 400" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="634.0" y="409.5" text-anchor="middle" class="arrow-label">visible incident</text>
+<path d="M 842 435 L 820 400" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="831.0" y="409.5" text-anchor="middle" class="arrow-label">agent responses</text>
+<path d="M 955 275 L 1010 305" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="982.5" y="282.0" text-anchor="middle" class="arrow-label">JSON trace</text>
+<path d="M 1370 270 L 1435 195" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1370 350 L 1435 385" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1370 420 L 1435 590" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1190 420 L 1190 515" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1225 420 L 1225 720" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1370 600 L 1435 765" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1370 795 L 1435 795" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1595 260 L 1595 300" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1595 470 L 1595 515" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1435 835 Q 1190.0 905.0 945 885" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 1435 410 Q 1190.0 722.5 945 835" fill="none" stroke="#475467" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="512" y="370" width="55" height="36" rx="6" fill="white" stroke="#667085" stroke-width="1"/>
+<text x="539.5" y="392" text-anchor="middle" class="step-num">1</text>
+<text x="539.5" y="422" text-anchor="middle" class="small">setup</text>
+<line x1="567" y1="388" x2="580" y2="388" stroke="#667085" stroke-width="1.4"/>
+<rect x="584" y="370" width="55" height="36" rx="6" fill="white" stroke="#667085" stroke-width="1"/>
+<text x="611.5" y="392" text-anchor="middle" class="step-num">2</text>
+<text x="611.5" y="422" text-anchor="middle" class="small">normal tasks</text>
+<line x1="639" y1="388" x2="652" y2="388" stroke="#667085" stroke-width="1.4"/>
+<rect x="656" y="370" width="55" height="36" rx="6" fill="white" stroke="#667085" stroke-width="1"/>
+<text x="683.5" y="392" text-anchor="middle" class="step-num">3</text>
+<text x="683.5" y="422" text-anchor="middle" class="small">Morgan incident</text>
+<line x1="711" y1="388" x2="724" y2="388" stroke="#667085" stroke-width="1.4"/>
+<rect x="728" y="370" width="55" height="36" rx="6" fill="white" stroke="#667085" stroke-width="1"/>
+<text x="755.5" y="392" text-anchor="middle" class="step-num">4</text>
+<text x="755.5" y="422" text-anchor="middle" class="small">observe</text>
+<line x1="783" y1="388" x2="796" y2="388" stroke="#667085" stroke-width="1.4"/>
+<rect x="800" y="370" width="55" height="36" rx="6" fill="white" stroke="#667085" stroke-width="1"/>
+<text x="827.5" y="392" text-anchor="middle" class="step-num">5</text>
+<text x="827.5" y="422" text-anchor="middle" class="small">act</text>
+<line x1="855" y1="388" x2="868" y2="388" stroke="#667085" stroke-width="1.4"/>
+<rect x="872" y="370" width="55" height="36" rx="6" fill="white" stroke="#667085" stroke-width="1"/>
+<text x="899.5" y="392" text-anchor="middle" class="step-num">6</text>
+<text x="899.5" y="422" text-anchor="middle" class="small">log</text>
+<text x="55" y="1010" class="small">Scope note: real-world abuse data is not collected; the system generates synthetic Minecraft-like traces for online-safety evaluation.</text>
+</svg>

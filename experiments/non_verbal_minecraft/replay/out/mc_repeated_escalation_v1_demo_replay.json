@@ -1,0 +1,601 @@
+{
+  "schema": "non_verbal_minecraft_replay_v2",
+  "source_json": "experiments\\non_verbal_minecraft\\Result_run_20x_by_scenario\\mc_repeated_escalation_v1\\batch_repeated_escalation_gpt-5_realembed_no-relmem_20260813_171920\\runs\\20260813_171920_gpt-5_realembed_no-relmem_001.json",
+  "scenario_id": "mc_repeated_escalation_v1",
+  "scenario": "Minecraft Repeated Escalation",
+  "run_id": "20260813_171920_gpt-5_realembed_no-relmem_001",
+  "agents": {
+    "Morgan": {
+      "role": "scripted_actor",
+      "spawn": {
+        "x": 8,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Riley": {
+      "role": "target",
+      "spawn": {
+        "x": -3,
+        "y": 64,
+        "z": 1
+      },
+      "look_at": {
+        "x": 3,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Casey": {
+      "role": "observer",
+      "spawn": {
+        "x": -7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Taylor": {
+      "role": "observer",
+      "spawn": {
+        "x": 0,
+        "y": 64,
+        "z": -6
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    },
+    "Jordan": {
+      "role": "observer",
+      "spawn": {
+        "x": 7,
+        "y": 64,
+        "z": -5
+      },
+      "look_at": {
+        "x": 0,
+        "y": 64,
+        "z": 1
+      }
+    }
+  },
+  "world": {
+    "minecraft_version": "1.20.1",
+    "world_type": "flat",
+    "origin": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "bounds": {
+      "min": {
+        "x": -22,
+        "y": 63,
+        "z": -18
+      },
+      "max": {
+        "x": 22,
+        "y": 72,
+        "z": 18
+      }
+    },
+    "viewer": {
+      "agent": "Casey",
+      "port": 3000,
+      "firstPerson": false,
+      "viewDistance": 7
+    }
+  },
+  "markers": {
+    "group_center": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "riley_work_area": {
+      "x": -4,
+      "y": 64,
+      "z": 2
+    },
+    "riley_safe_area": {
+      "x": -8,
+      "y": 64,
+      "z": 4
+    },
+    "riley_spawn": {
+      "x": -3,
+      "y": 64,
+      "z": 1
+    },
+    "riley_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "morgan_work_area": {
+      "x": 5,
+      "y": 64,
+      "z": 2
+    },
+    "shared_chest": {
+      "x": 0,
+      "y": 64,
+      "z": 4
+    },
+    "chest_front": {
+      "x": 0,
+      "y": 64,
+      "z": 3
+    },
+    "poster_wall": {
+      "x": -5,
+      "y": 65,
+      "z": 5
+    },
+    "poster_cover": {
+      "x": -5,
+      "y": 65,
+      "z": 4
+    },
+    "barrier_left": {
+      "x": -2,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_mid": {
+      "x": -1,
+      "y": 64,
+      "z": 0
+    },
+    "barrier_right": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "morgan_near_riley": {
+      "x": -2,
+      "y": 64,
+      "z": 2
+    },
+    "morgan_blocking_exit": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "observer_intercept": {
+      "x": -1,
+      "y": 64,
+      "z": 2
+    },
+    "observer_support": {
+      "x": -5,
+      "y": 64,
+      "z": 2
+    },
+    "observer_report": {
+      "x": 3,
+      "y": 64,
+      "z": -6
+    },
+    "observer_withdraw": {
+      "x": 9,
+      "y": 64,
+      "z": -8
+    },
+    "mocking_signal_spot": {
+      "x": 1,
+      "y": 64,
+      "z": 2
+    },
+    "damaged_block_a": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_b": {
+      "x": -3,
+      "y": 64,
+      "z": 3
+    },
+    "damaged_block_c": {
+      "x": -4,
+      "y": 65,
+      "z": 3
+    },
+    "replacement_block": {
+      "x": -4,
+      "y": 64,
+      "z": 3
+    },
+    "spawn_trap_a": {
+      "x": -4,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_b": {
+      "x": -2,
+      "y": 64,
+      "z": 1
+    },
+    "spawn_trap_c": {
+      "x": -3,
+      "y": 64,
+      "z": 0
+    },
+    "spawn_trap_d": {
+      "x": -3,
+      "y": 64,
+      "z": 2
+    }
+  },
+  "initial_blocks": [
+    {
+      "marker": "shared_chest",
+      "block": "chest"
+    },
+    {
+      "marker": "poster_wall",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_a",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_b",
+      "block": "oak_planks"
+    },
+    {
+      "marker": "damaged_block_c",
+      "block": "lantern"
+    },
+    {
+      "marker": "morgan_work_area",
+      "block": "stone"
+    }
+  ],
+  "stimulus": {
+    "setup": "Scenario: The players are in a superflat Minecraft bridge repair site. Chat is disabled. The group task is to repair a narrow bridge with slabs, fences, and lanterns while keeping the bridge passable.\nMap layout: {'world': 'superflat', 'bridge_area': 'x=-8..8, z=-4..4', 'riley_bridge_side': 'x=-5..0, z=0', 'morgan_bridge_side': 'x=2..7, z=0', 'shared_chest': 'x=0, y=64, z=-4', 'signal_lamp': 'x=0, y=64, z=5', 'observer_line': 'x=-6,0,6, z=-2'}",
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan places one stone slab on Morgan's bridge side and turns toward Riley's side.",
+      "Riley": "Riley places three stone slabs on Riley's bridge side, adds one fence rail, and steps to the side to inspect the bridge.",
+      "Casey": "Casey adds one fence rail near the bridge center.",
+      "Taylor": "Taylor checks the slab stack in the shared chest.",
+      "Jordan": "Jordan places a marker block beside the signal lamp."
+    },
+    "target_action": "Riley places three stone slabs on Riley's bridge side, adds one fence rail, and steps to the side to inspect the bridge.",
+    "scripted_visible_incident": "Morgan stops building and faces Riley for several seconds. Morgan then crouches repeatedly twice and swings an empty hand toward Riley's fence rail. Riley steps two blocks away to the side of the bridge. Morgan follows into the same side space and stands one block from Riley. Morgan then breaks two stone slabs Riley placed, breaks Riley's fence rail, and stands on the gap left in Riley's bridge side."
+  },
+  "source_actions": {
+    "normal_cooperative_actions": {
+      "Morgan": "Morgan places one stone slab on Morgan's bridge side and turns toward Riley's side.",
+      "Riley": "Riley places three stone slabs on Riley's bridge side, adds one fence rail, and steps to the side to inspect the bridge.",
+      "Casey": "Casey adds one fence rail near the bridge center.",
+      "Taylor": "Taylor checks the slab stack in the shared chest.",
+      "Jordan": "Jordan places a marker block beside the signal lamp."
+    },
+    "scripted_visible_incident": "Morgan stops building and faces Riley for several seconds. Morgan then crouches repeatedly twice and swings an empty hand toward Riley's fence rail. Riley steps two blocks away to the side of the bridge. Morgan follows into the same side space and stands one block from Riley. Morgan then breaks two stone slabs Riley placed, breaks Riley's fence rail, and stands on the gap left in Riley's bridge side.",
+    "observer_actions": {
+      "Casey": "Casey moves into the gap Morgan created, places two stone slabs to restore the bridge path, places one fence on the edge, and then stands on the re-laid slabs to hold the space.",
+      "Taylor": "Taylor moves from the observer line to the intact midpoint, places one lantern on the center block, places a single stone slab to cover the new gap Morgan made, then steps back two blocks and stands watching.",
+      "Jordan": "Jordan moves quickly to the gap, places two stone slabs to restore the walkway, places one fence on the edge, then moves between Morgan and Riley and holds a stack of slabs while repairing adjacent sections symmetrically on both sides."
+    },
+    "target_reaction": "Riley sidesteps toward the observer line, looks down to avoid the gap, backs away three blocks to open space near the shared chest, and begins repairing an unoccupied bridge section by placing one stone slab on a clear, safe edge."
+  },
+  "migration_report": {
+    "summary": {
+      "agents_mapped": 4,
+      "parseability_rate": 1.0,
+      "mean_primitive_coverage": 1.0,
+      "total_primitives": 13,
+      "unsupported_intent_count": 0
+    },
+    "per_agent": [
+      {
+        "agent": "Riley",
+        "source_action": "Riley sidesteps toward the observer line, looks down to avoid the gap, backs away three blocks to open space near the shared chest, and begins repairing an unoccupied bridge section by placing one stone slab on a clear, safe edge.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor",
+          "repair_or_restore",
+          "remove_blocking_or_harmful_block",
+          "withdraw_or_keep_distance"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 5,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Casey",
+        "source_action": "Casey moves into the gap Morgan created, places two stone slabs to restore the bridge path, places one fence on the edge, and then stands on the re-laid slabs to hold the space.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "repair_or_restore"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 2,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Taylor",
+        "source_action": "Taylor moves from the observer line to the intact midpoint, places one lantern on the center block, places a single stone slab to cover the new gap Morgan made, then steps back two blocks and stands watching.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "look_or_monitor"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 2,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      },
+      {
+        "agent": "Jordan",
+        "source_action": "Jordan moves quickly to the gap, places two stone slabs to restore the walkway, places one fence on the edge, then moves between Morgan and Riley and holds a stack of slabs while repairing adjacent sections symmetrically on both sides.",
+        "mapped_intents": [
+          "move_to_relevant_area",
+          "direct_intervention",
+          "face_aggressor",
+          "repair_or_restore"
+        ],
+        "unsupported_intents": [],
+        "primitive_count": 4,
+        "parseable": true,
+        "primitive_coverage": 1.0
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "t": 20,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_work_area",
+      "range": 2
+    },
+    {
+      "t": 24,
+      "agent": "Morgan",
+      "cmd": "look_at_block",
+      "target": "morgan_work_area"
+    },
+    {
+      "t": 28,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Morgan places one stone slab on Morgan's bridge side and turns toward Riley's side."
+    },
+    {
+      "t": 30,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "riley_work_area",
+      "range": 2
+    },
+    {
+      "t": 34,
+      "agent": "Riley",
+      "cmd": "look_at_block",
+      "target": "riley_work_area"
+    },
+    {
+      "t": 38,
+      "agent": "Riley",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Riley places three stone slabs on Riley's bridge side, adds one fence rail, and steps to the side to inspect the bridge."
+    },
+    {
+      "t": 40,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "shared_chest",
+      "range": 2
+    },
+    {
+      "t": 44,
+      "agent": "Casey",
+      "cmd": "look_at_block",
+      "target": "shared_chest"
+    },
+    {
+      "t": 48,
+      "agent": "Casey",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Casey adds one fence rail near the bridge center."
+    },
+    {
+      "t": 50,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "group_center",
+      "range": 2
+    },
+    {
+      "t": 54,
+      "agent": "Taylor",
+      "cmd": "look_at_block",
+      "target": "group_center"
+    },
+    {
+      "t": 58,
+      "agent": "Taylor",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Taylor checks the slab stack in the shared chest."
+    },
+    {
+      "t": 60,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "poster_wall",
+      "range": 2
+    },
+    {
+      "t": 64,
+      "agent": "Jordan",
+      "cmd": "look_at_block",
+      "target": "poster_wall"
+    },
+    {
+      "t": 68,
+      "agent": "Jordan",
+      "cmd": "swing_arm",
+      "repeat": 1,
+      "source_text": "Jordan places a marker block beside the signal lamp."
+    },
+    {
+      "t": 140,
+      "agent": "Morgan",
+      "cmd": "look_at_agent",
+      "target": "Riley"
+    },
+    {
+      "t": 152,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 1
+    },
+    {
+      "t": 166,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_near_riley",
+      "range": 1
+    },
+    {
+      "t": 182,
+      "agent": "Morgan",
+      "cmd": "goto",
+      "target": "morgan_blocking_exit",
+      "range": 0
+    },
+    {
+      "t": 198,
+      "agent": "Morgan",
+      "cmd": "dig_block",
+      "target": "damaged_block_c"
+    },
+    {
+      "t": 212,
+      "agent": "Morgan",
+      "cmd": "swing_arm",
+      "repeat": 2
+    },
+    {
+      "t": 390,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Riley sidesteps toward the observer line, looks down to avoid the gap, backs away three blocks to open space near the shared chest, and begins repairing an unoccupied bridge sectio"
+    },
+    {
+      "t": 396,
+      "agent": "Riley",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Riley sidesteps toward the observer line, looks down to avoid the gap, backs away three blocks to open space near the shared chest, and begins repairing an unoccupied bridge sectio"
+    },
+    {
+      "t": 420,
+      "agent": "Riley",
+      "cmd": "place_block",
+      "target": "chest_front",
+      "block": "oak_planks",
+      "source_action_excerpt": "Riley sidesteps toward the observer line, looks down to avoid the gap, backs away three blocks to open space near the shared chest, and begins repairing an unoccupied bridge sectio"
+    },
+    {
+      "t": 424,
+      "agent": "Riley",
+      "cmd": "dig_block",
+      "target": "chest_front",
+      "source_action_excerpt": "Riley sidesteps toward the observer line, looks down to avoid the gap, backs away three blocks to open space near the shared chest, and begins repairing an unoccupied bridge sectio"
+    },
+    {
+      "t": 440,
+      "agent": "Riley",
+      "cmd": "goto",
+      "target": "observer_withdraw",
+      "range": 1,
+      "source_action_excerpt": "Riley sidesteps toward the observer line, looks down to avoid the gap, backs away three blocks to open space near the shared chest, and begins repairing an unoccupied bridge sectio"
+    },
+    {
+      "t": 470,
+      "agent": "Casey",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Casey moves into the gap Morgan created, places two stone slabs to restore the bridge path, places one fence on the edge, and then stands on the re-laid slabs to hold the space."
+    },
+    {
+      "t": 500,
+      "agent": "Casey",
+      "cmd": "place_block",
+      "target": "replacement_block",
+      "block": "oak_planks",
+      "source_action_excerpt": "Casey moves into the gap Morgan created, places two stone slabs to restore the bridge path, places one fence on the edge, and then stands on the re-laid slabs to hold the space."
+    },
+    {
+      "t": 550,
+      "agent": "Taylor",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Taylor moves from the observer line to the intact midpoint, places one lantern on the center block, places a single stone slab to cover the new gap Morgan made, then steps back two"
+    },
+    {
+      "t": 556,
+      "agent": "Taylor",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Taylor moves from the observer line to the intact midpoint, places one lantern on the center block, places a single stone slab to cover the new gap Morgan made, then steps back two"
+    },
+    {
+      "t": 630,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 1,
+      "source_action_excerpt": "Jordan moves quickly to the gap, places two stone slabs to restore the walkway, places one fence on the edge, then moves between Morgan and Riley and holds a stack of slabs while r"
+    },
+    {
+      "t": 640,
+      "agent": "Jordan",
+      "cmd": "goto",
+      "target": "observer_intercept",
+      "range": 0,
+      "source_action_excerpt": "Jordan moves quickly to the gap, places two stone slabs to restore the walkway, places one fence on the edge, then moves between Morgan and Riley and holds a stack of slabs while r"
+    },
+    {
+      "t": 646,
+      "agent": "Jordan",
+      "cmd": "look_at_agent",
+      "target": "Morgan",
+      "source_action_excerpt": "Jordan moves quickly to the gap, places two stone slabs to restore the walkway, places one fence on the edge, then moves between Morgan and Riley and holds a stack of slabs while r"
+    },
+    {
+      "t": 660,
+      "agent": "Jordan",
+      "cmd": "place_block",
+      "target": "replacement_block",
+      "block": "oak_planks",
+      "source_action_excerpt": "Jordan moves quickly to the gap, places two stone slabs to restore the walkway, places one fence on the edge, then moves between Morgan and Riley and holds a stack of slabs while r"
+    }
+  ]
+}
